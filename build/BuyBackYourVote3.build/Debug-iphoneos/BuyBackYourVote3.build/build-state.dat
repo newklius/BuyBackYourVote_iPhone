@@ -1,0 +1,1114 @@
+TBuyBackYourVote3
+v5
+r1
+cCheck dependencies
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist build/Debug-iphoneos/BuyBackYourVote3.app/ResourceRules.plist
+cProcessInfoPlistFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/Info.plist" BuyBackYourVote3/BuyBackYourVote3-Info.plist
+cProcessPCH /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch.pth BuyBackYourVote3/BuyBackYourVote3-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/AppDelegate.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/AppDelegate.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/main.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/main.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/ScanViewController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/ScanViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/SearchViewController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/SearchViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearchTableViewController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearchTableViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarificationTableViewController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyClarificationTableViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyResultsViewController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyResultsViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarification.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/../CompanyClarification.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarificationDataController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyClarificationDataController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearch.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearch.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearchDataController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearchDataController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Candidate.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Candidate.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Pacs.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Pacs.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Bill.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Bill.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Company.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Company.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillsDataController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillsDataController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillsTableViewController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillsTableViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillDetailViewController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillDetailViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyWebViewController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyWebViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/BuyBackYourVote3" normal armv7
+cGenerateDSYMFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app.dSYM" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/BuyBackYourVote3"
+cCopyStringsFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/en.lproj/InfoPlist.strings" BuyBackYourVote3/en.lproj/InfoPlist.strings
+cCompileStoryboard "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/en.lproj/MainStoryboard.storyboard"
+cCopyPNGFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/first.png" BuyBackYourVote3/first.png
+cCopyPNGFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/first@2x.png" BuyBackYourVote3/first@2x.png
+cCopyPNGFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/second.png" BuyBackYourVote3/second.png
+cCopyPNGFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/second@2x.png" BuyBackYourVote3/second@2x.png
+cCopyPNGFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/zbar-back.png" ZBarSDK/Resources/zbar-back.png
+cCpResource ZBarSDK/Resources/zbar-help.html build/Debug-iphoneos/BuyBackYourVote3.app/zbar-help.html
+cCopyPNGFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/zbar-helpicons.png" ZBarSDK/Resources/zbar-helpicons.png
+cCopyPNGFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/zbar-samples.png" ZBarSDK/Resources/zbar-samples.png
+cProcessProductPackaging "/Users/nathankeyes/Library/MobileDevice/Provisioning Profiles/909821F0-3461-4C7C-96BE-B356D1CFD14C.mobileprovision" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/embedded.mobileprovision"
+cProcessProductPackaging "/Users/nathankeyes/Library/MobileDevice/Provisioning Profiles/909821F0-3461-4C7C-96BE-B356D1CFD14C.mobileprovision" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/embedded.mobileprovision"
+cTouch "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app"
+cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3.xcent"
+cCodeSign "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app"
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk
+c000000004F453DF20000000000000110
+t1329937906
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist
+c000000004F6F76A200000000000001A7
+t1332704930
+s423
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist
+c000000004F6F76A200000000000001E5
+t1332704930
+s485
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004F6F76A4000000000015B230
+t1332704932
+s1421872
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004F6F76A500000000003AE430
+t1332704933
+s3859504
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c000000004F6F76A50000000000075200
+t1332704933
+s479744
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c000000004F6F76A5000000000001BD60
+t1332704933
+s114016
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004F6F76A6000000000052C940
+t1332704934
+s5425472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004F6F76A70000000000175AA0
+t1332704935
+s1530528
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004F6F76A90000000000798EA0
+t1332704937
+s7966368
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/usr/lib/libiconv.dylib
+c000000004F6F76AF00000000001FEDB0
+t1332704943
+s2092464
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/../CompanyClarification.h
+c000000004FA43181000000000000014C
+t1336160641
+s332
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/../CompanyClarification.m
+c000000004FA4317300000000000001AF
+t1336160627
+s431
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/AppDelegate.h
+c000000004FA33B300000000000000124
+t1336097584
+s292
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/AppDelegate.m
+c000000004FA33B300000000000000805
+t1336097584
+s2053
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Bill.h
+c000000004FA587200000000000000255
+t1336248096
+s597
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Bill.m
+c000000004FA7038E000000000000029B
+t1336345486
+s667
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillDetailViewController.h
+c000000004FA7F04C000000000000025B
+t1336406092
+s603
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillDetailViewController.m
+c000000004FA82D7E00000000000005BB
+t1336421758
+s1467
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillsDataController.h
+c000000004FA7E91C000000000000021D
+t1336404252
+s541
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillsDataController.m
+c000000004FA7E91600000000000003B7
+t1336404246
+s951
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillsTableViewController.h
+c000000004FA7E9940000000000000163
+t1336404372
+s355
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillsTableViewController.m
+c000000004FA7EE6D00000000000011D4
+t1336405613
+s4564
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BuyBackYourVote3-Prefix.pch
+c000000004FA3422D0000000000000167
+t1336099373
+s359
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Candidate.h
+c000000004FA85C6C00000000000002D3
+t1336433772
+s723
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Candidate.m
+c000000004FA85B38000000000000031A
+t1336433464
+s794
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Company.h
+c000000004FA6FA0D00000000000003DC
+t1336343053
+s988
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Company.m
+c000000004FA85C5300000000000016CA
+t1336433747
+s5834
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyClarificationDataController.h
+c000000004FA433E20000000000000200
+t1336161250
+s512
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyClarificationDataController.m
+c000000004FA83FAF000000000000050A
+t1336426415
+s1290
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyClarificationTableViewController.h
+c000000004FA450AD00000000000001A7
+t1336168621
+s423
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyClarificationTableViewController.m
+c000000004FA879C7000000000000139A
+t1336441287
+s5018
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyResultsViewController.h
+c000000004FA84E3800000000000002B0
+t1336430136
+s688
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyResultsViewController.m
+c000000004FA85CF7000000000000067D
+t1336433911
+s1661
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearch.h
+c000000004FA878A00000000000000184
+t1336440992
+s388
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearch.m
+c000000004FA878C500000000000001E2
+t1336441029
+s482
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearchDataController.h
+c000000004FA8B4530000000000000224
+t1336456275
+s548
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearchDataController.m
+c000000004FA8B7E30000000000000DCA
+t1336457187
+s3530
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearchTableViewController.h
+c000000004FA450B60000000000000183
+t1336168630
+s387
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearchTableViewController.m
+c000000004FA975D90000000000001506
+t1336505817
+s5382
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyWebViewController.h
+c000000004FA9758F0000000000000198
+t1336505743
+s408
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyWebViewController.m
+c000000004FA975AA0000000000000530
+t1336505770
+s1328
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/FirstViewController.h
+c000000004FA867D6000000000000015D
+t1336436694
+s349
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/FirstViewController.m
+c000000004FA87C12000000000000130F
+t1336441874
+s4879
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Pacs.h
+c000000004FA85B5A0000000000000282
+t1336433498
+s642
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Pacs.m
+c000000004FA85B3D00000000000002B3
+t1336433469
+s691
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/ScanViewController.h
+c000000004FA9760E00000000000002BB
+t1336505870
+s699
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/ScanViewController.m
+c000000004FAA9D6F0000000000001879
+t1336581487
+s6265
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/SearchViewController.h
+c000000004FA9764200000000000002A0
+t1336505922
+s672
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/SearchViewController.m
+c000000004FA976B20000000000000ED9
+t1336506034
+s3801
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/SecondViewController.h
+c000000004FA57850000000000000014F
+t1336244304
+s335
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/SecondViewController.m
+c000000004FA879BA00000000000005F4
+t1336441274
+s1524
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/en.lproj/InfoPlist.strings
+c000000004FA33B30000000000000002D
+t1336097584
+s45
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/en.lproj/MainStoryboard.storyboard
+c000000004FA987B40000000000007AEF
+t1336510388
+s31471
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/first.png
+c000000004F62C1B900000000000000FD
+t1331872185
+s253
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/first@2x.png
+c000000004F62C1B90000000000000192
+t1331872185
+s402
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/main.m
+c000000004FA33B30000000000000015F
+t1336097584
+s351
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/second.png
+c000000004F62C1B90000000000000080
+t1331872185
+s128
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/second@2x.png
+c000000004F62C1B90000000000000082
+t1331872185
+s130
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/Headers/ZBarSDK/ZBarCameraSimulator.h
+c000000004E40215F000000000000066A
+t1312825695
+s1642
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/Headers/ZBarSDK/ZBarCaptureReader.h
+c000000004E40215F0000000000000EA0
+t1312825695
+s3744
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/Headers/ZBarSDK/ZBarHelpController.h
+c000000004E40215F00000000000007B2
+t1312825695
+s1970
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/Headers/ZBarSDK/ZBarImage.h
+c000000004E40215F0000000000000905
+t1312825695
+s2309
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/Headers/ZBarSDK/ZBarImageScanner.h
+c000000004E40215F00000000000006AB
+t1312825695
+s1707
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/Headers/ZBarSDK/ZBarReaderController.h
+c000000004E40215F000000000000145B
+t1312825695
+s5211
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/Headers/ZBarSDK/ZBarReaderView.h
+c000000004E40215F00000000000011E1
+t1312825695
+s4577
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/Headers/ZBarSDK/ZBarReaderViewController.h
+c000000004E40215F00000000000015ED
+t1312825695
+s5613
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/Headers/ZBarSDK/ZBarSDK.h
+c000000004E40215F0000000000000555
+t1312825695
+s1365
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/Headers/ZBarSDK/ZBarSymbol.h
+c000000004E40215F0000000000000957
+t1312825695
+s2391
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/Headers/ZBarSDK/zbar.h
+c000000004E40215F000000000000D1C6
+t1312825695
+s53702
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/Resources/zbar-back.png
+c000000004E40215F000000000000013F
+t1312825695
+s319
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/Resources/zbar-help.html
+c000000004E40215F0000000000000D37
+t1312825695
+s3383
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/Resources/zbar-helpicons.png
+c000000004E40215F00000000000047AE
+t1312825695
+s18350
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/Resources/zbar-samples.png
+c000000004E40215F000000000000049D
+t1312825695
+s1181
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/libzbar.a
+c000000004E40215F00000000002E5F0C
+t1312825695
+s3038988
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3.xcent
+t1336436131
+s438
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/AppDelegate.o
+t1336436128
+s58828
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Bill.o
+t1336436129
+s11652
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillDetailViewController.o
+t1336436129
+s56560
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillsDataController.o
+t1336436129
+s10720
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillsTableViewController.o
+t1336436129
+s54904
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BuyBackYourVote3.LinkFileList
+c000000004FA969D50000000000000CD7
+t1336502741
+s3287
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Candidate.o
+t1336436129
+s14336
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Company.o
+t1336436129
+s29888
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarification.o
+t1336436129
+s7428
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarificationDataController.o
+t1336436129
+s11376
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarificationTableViewController.o
+t1336502741
+s55252
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyResultsViewController.o
+t1336436129
+s57436
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearch.o
+t1336441416
+s8512
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearchDataController.o
+t1336502741
+s16996
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearchTableViewController.o
+t1336510400
+s55380
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyWebViewController.o
+t1336510400
+s52728
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/FirstViewController.o
+t1336436796
+s73560
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Pacs.o
+t1336436129
+s12856
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/ScanViewController.o
+t1336510400
+s82552
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/SearchViewController.o
+t1336510400
+s65032
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/SecondViewController.o
+t1336441416
+s53560
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/main.o
+t1336436128
+s3360
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app
+t1336581373
+s578
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app.dSYM
+t1336581373
+s102
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/BuyBackYourVote3
+t1336581373
+s340384
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/Info.plist
+t1336436128
+s1161
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/PkgInfo
+t1336436128
+s8
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/ResourceRules.plist
+t1336436128
+s485
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/embedded.mobileprovision
+t1336436131
+s8032
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/en.lproj/InfoPlist.strings
+t1336436130
+s42
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/en.lproj/MainStoryboard.storyboardc
+t1336510402
+s408
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/first.png
+t1336436130
+s253
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/first@2x.png
+t1336436131
+s455
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/second.png
+t1336436131
+s128
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/second@2x.png
+t1336436131
+s130
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/zbar-back.png
+t1336436131
+s319
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/zbar-help.html
+t1336436131
+s3383
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/zbar-helpicons.png
+t1336436131
+s23247
+
+N/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/zbar-samples.png
+t1336436131
+s1615
+
+N/Users/nathankeyes/Library/MobileDevice/Provisioning Profiles/909821F0-3461-4C7C-96BE-B356D1CFD14C.mobileprovision
+c000000004FA862FF0000000000001F60
+t1336435455
+s8032
+
+N/var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch.pth
+t1336436128
+s4065920
+
+NBuyBackYourVote3/BuyBackYourVote3-Info.plist
+c000000004FA33B3000000000000004D6
+t1336097584
+s1238
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/../CompanyClarification.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/AppDelegate.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Bill.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillDetailViewController.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillsDataController.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillsTableViewController.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Candidate.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Company.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyClarificationDataController.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyClarificationTableViewController.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyResultsViewController.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearch.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearchDataController.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearchTableViewController.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyWebViewController.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/FirstViewController.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Pacs.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/ScanViewController.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/SearchViewController.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/SecondViewController.m"
+r0
+
+CBuild AST from "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/main.m"
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies17f519f7d45ab541^fce068f7d45ab541^---0#1#0#--18"Check dependencies36"53026864-8064-4E8A-88D4-AC97CF89E2EB-
+
+CCodeSign "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app"
+s358274296.804386
+e358274297.052422
+r1
+xCodeSign
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"CodeSign build/Debug-iphoneos/BuyBackYourVote3.appa52dcef8d45ab541^336b0df9d45ab541^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/0000000000000000^946"CodeSign build/Debug-iphoneos/BuyBackYourVote3.app    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign 2530add942576cf36f61d5ca4ba19d7d54f6ef25 "--resource-rules=/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/ResourceRules.plist" --entitlements "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3.xcent" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app"36"E9B209E0-A389-498A-9FD8-33F79A2B9F46-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/AppDelegate.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/AppDelegate.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358128928.546856
+e358128928.822102
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/AppDelegate.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/AppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/AppDelegate.m7c298c209d58b541^5c74d2209d58b541^---0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/AppDelegate.m0000000000000000^3625"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/AppDelegate.o BuyBackYourVote3/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/AppDelegate.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/AppDelegate.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/AppDelegate.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/AppDelegate.o"36"64D42BB4-5141-4371-9FCD-248AB095078D-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Bill.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Bill.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358128929.464536
+e358128929.526494
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Bill.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Bill.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Bill.mfd1077219d58b541^c6c486219d58b541^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/Bill.m0000000000000000^3583"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Bill.o BuyBackYourVote3/Bill.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Bill.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Bill.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Bill.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Bill.o"36"4399E23D-66B2-40AB-A0DE-D420AA1B3DB9-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillDetailViewController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillDetailViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358128929.638521
+e358128929.742218
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillDetailViewController.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillDetailViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillDetailViewController.ma5a0a3219d58b541^d200be219d58b541^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/BillDetailViewController.m0000000000000000^3703"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillDetailViewController.o BuyBackYourVote3/BillDetailViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillDetailViewController.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillDetailViewController.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillDetailViewController.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillDetailViewController.o"36"B8163B3C-4406-4647-9706-80756E573533-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillsDataController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillsDataController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358128929.528154
+e358128929.586040
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillsDataController.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillsDataController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillsDataController.me25887219d58b541^ab0596219d58b541^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/BillsDataController.m0000000000000000^3673"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillsDataController.o BuyBackYourVote3/BillsDataController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillsDataController.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillsDataController.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillsDataController.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillsDataController.o"36"4792D457-70AE-4760-96A4-E632DC992FA9-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillsTableViewController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillsTableViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358128929.587344
+e358128929.699736
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillsTableViewController.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillsTableViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillsTableViewController.m778596219d58b541^9d2eb3219d58b541^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/BillsTableViewController.m0000000000000000^3703"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillsTableViewController.o BuyBackYourVote3/BillsTableViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillsTableViewController.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillsTableViewController.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BillsTableViewController.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BillsTableViewController.o"36"8E82AC9B-A9A7-42EF-A0FF-06951101C00D-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Candidate.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Candidate.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358128929.402880
+e358128929.462606
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Candidate.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Candidate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Candidate.m874e67219d58b541^747e76219d58b541^---0#0#0#-19%DVTDocumentLocation2@111"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/Candidate.m0000000000000000^3613"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Candidate.o BuyBackYourVote3/Candidate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Candidate.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Candidate.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Candidate.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Candidate.o"36"3F1BAB5B-9DA4-4DB5-890C-7C0BB6CA8AD0-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Company.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Company.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358128929.527597
+e358128929.637217
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Company.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Company.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Company.md13d87219d58b541^bb2ba3219d58b541^---0#0#0#-19%DVTDocumentLocation2@109"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/Company.m0000000000000000^3601"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Company.o BuyBackYourVote3/Company.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Company.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Company.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Company.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Company.o"36"049F680B-577A-4F13-B310-219543EB0A5D-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarification.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/../CompanyClarification.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358128929.097395
+e358128929.145034
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarification.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/../CompanyClarification.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/../CompanyClarification.m0d1719219d58b541^ca3525219d58b541^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/../CompanyClarification.m0000000000000000^3685"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarification.o BuyBackYourVote3/../CompanyClarification.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarification.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarification.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/../CompanyClarification.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarification.o"36"98877E7E-56CD-48EC-8EF1-9916F2A25B5E-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarificationDataController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyClarificationDataController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358128929.146353
+e358128929.267671
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarificationDataController.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyClarificationDataController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyClarificationDataController.m9ca425219d58b541^a58444219d58b541^---0#0#0#-19%DVTDocumentLocation2@136"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyClarificationDataController.m0000000000000000^3763"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarificationDataController.o BuyBackYourVote3/CompanyClarificationDataController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarificationDataController.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarificationDataController.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyClarificationDataController.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarificationDataController.o"36"B13DA592-8C65-4CF6-8EBB-C624DCEFD9D8-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarificationTableViewController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyClarificationTableViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358195541.589976
+e358195541.694930
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarificationTableViewController.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyClarificationTableViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection129"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyClarificationTableViewController.m40309755a159b541^d0edb155a159b541^---0#0#0#-19%DVTDocumentLocation2@141"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyClarificationTableViewController.m0000000000000000^3793"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarificationTableViewController.o BuyBackYourVote3/CompanyClarificationTableViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarificationTableViewController.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarificationTableViewController.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyClarificationTableViewController.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyClarificationTableViewController.o"36"AB4789B4-AC6F-4717-A26E-F76D3CEFFA0C-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyResultsViewController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyResultsViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358128929.091159
+e358128929.313012
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyResultsViewController.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyResultsViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyResultsViewController.mb68517219d58b541^aa655b219d58b541^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyResultsViewController.m0000000000000000^3727"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyResultsViewController.o BuyBackYourVote3/CompanyResultsViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyResultsViewController.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyResultsViewController.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyResultsViewController.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyResultsViewController.o"36"693098EC-D83F-463E-901F-1C0CCE5A6EC7-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearch.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearch.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358134216.520980
+e358134216.691567
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearch.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearch.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearch.m8e9085c8b158b541^890cb3c8b158b541^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearch.m0000000000000000^3637"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearch.o BuyBackYourVote3/CompanySearch.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearch.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearch.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearch.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearch.o"36"34103A77-A485-41F1-98FA-0A086128D657-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearchDataController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearchDataController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358195541.698162
+e358195541.755509
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearchDataController.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearchDataController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearchDataController.m82e3b255a159b541^d768c155a159b541^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearchDataController.m0000000000000000^3721"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearchDataController.o BuyBackYourVote3/CompanySearchDataController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearchDataController.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearchDataController.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearchDataController.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearchDataController.o"36"748EFDF7-25DC-46EA-9962-D96B172487C6-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearchTableViewController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearchTableViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358203200.505387
+e358203200.699321
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearchTableViewController.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearchTableViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearchTableViewController.md28c8140bf59b541^be13b340bf59b541^---0#0#0#-19%DVTDocumentLocation2@134"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearchTableViewController.m0000000000000000^3751"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearchTableViewController.o BuyBackYourVote3/CompanySearchTableViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearchTableViewController.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearchTableViewController.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanySearchTableViewController.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanySearchTableViewController.o"36"90304437-A31B-4A66-89E9-518FE6D1B4EC-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyWebViewController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyWebViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358203200.607402
+e358203200.734598
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyWebViewController.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyWebViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyWebViewController.mfe269c40bf59b541^f818bc40bf59b541^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyWebViewController.m0000000000000000^3703"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyWebViewController.o BuyBackYourVote3/CompanyWebViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyWebViewController.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyWebViewController.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/CompanyWebViewController.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/CompanyWebViewController.o"36"584A4834-08AF-415F-8ED3-CD2855838E0A-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/FirstViewController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/FirstViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358134684.000660
+e358134684.132598
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/FirstViewController.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/FirstViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/FirstViewController.mfb5d009cb358b541^f6f0219cb358b541^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/FirstViewController.m0000000000000000^3673"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/FirstViewController.o BuyBackYourVote3/FirstViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/FirstViewController.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/FirstViewController.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/FirstViewController.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/FirstViewController.o"36"B0206096-CE73-446E-90A4-63F28864D492-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Pacs.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Pacs.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358128929.463951
+e358128929.526152
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Pacs.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Pacs.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Pacs.mfaf276219d58b541^0cb186219d58b541^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/Pacs.m0000000000000000^3583"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Pacs.o BuyBackYourVote3/Pacs.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Pacs.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Pacs.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/Pacs.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/Pacs.o"36"00B2281C-02A9-4620-9846-7128221C0B36-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/ScanViewController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/ScanViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358274295.436902
+e358274296.117131
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/ScanViewController.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/ScanViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/ScanViewController.mac0370f7d45ab541^b5fb1df8d45ab541^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/ScanViewController.m0000000000000000^3667"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/ScanViewController.o BuyBackYourVote3/ScanViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/ScanViewController.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/ScanViewController.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/ScanViewController.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/ScanViewController.o"36"DA264443-4347-4BAF-AC6D-6F1B4003FBED-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/SearchViewController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/SearchViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358203199.260973
+e358203200.504064
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/SearchViewController.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/SearchViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/SearchViewController.mda59443fbf59b541^620f8140bf59b541^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/SearchViewController.m0000000000000000^3679"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/SearchViewController.o BuyBackYourVote3/SearchViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/SearchViewController.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/SearchViewController.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/SearchViewController.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/SearchViewController.o"36"1E6DD6B3-7BAE-4DA7-AADF-5E65226EDC4C-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/SecondViewController.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/SecondViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358134216.203758
+e358134216.475200
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/SecondViewController.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/SecondViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/SecondViewController.mec5134c8b158b541^b0c57ac8b158b541^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/SecondViewController.m0000000000000000^3679"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/SecondViewController.o BuyBackYourVote3/SecondViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/SecondViewController.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/SecondViewController.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/SecondViewController.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/SecondViewController.o"36"CDC6BCE8-D9EB-4A46-AA69-C951AA4D33EA-
+
+CCompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/main.o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/main.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358128928.546853
+e358128928.809582
+r1
+xCompileC
+xbuild/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/main.o
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/main.m17298c209d58b541^a73fcf209d58b541^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/main.m0000000000000000^3583"CompileC build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/main.o BuyBackYourVote3/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -include /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch -MMD -MT dependencies -MF "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/main.d" --serialize-diagnostics "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/main.dia" -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/main.m" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/main.o"36"80955FBE-5D5A-48CE-AE9F-59D95EDD9CBC-
+
+CCompileStoryboard "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/en.lproj/MainStoryboard.storyboard"
+s358203202.253400
+e358203202.722220
+r1
+xCompileStoryboard
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/en.lproj/MainStoryboard.storyboard
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"CompileStoryboard BuyBackYourVote3/en.lproj/MainStoryboard.storyboard44f74042bf59b541^5fedb842bf59b541^---0#0#0#-19%DVTDocumentLocation2@134"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/en.lproj/MainStoryboard.storyboard0000000000000000^976"CompileStoryboard BuyBackYourVote3/en.lproj/MainStoryboard.storyboard    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/en.lproj/MainStoryboard.storyboardc" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/en.lproj/MainStoryboard.storyboard" --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk36"2ED12913-1ACC-4BA1-AB7B-3666124873A7-
+
+CCopyPNGFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/first.png" BuyBackYourVote3/first.png
+s358128930.647294
+e358128930.993245
+r1
+xCopyPNGFile
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/first.png
+xBuyBackYourVote3/first.png
+olibpng warning: Warning: Input PNG does not have an 8 bit input depth.  Please convert your PNG to 8-bit for optimal performance on iPhone OS.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"CopyPNGFile build/Debug-iphoneos/BuyBackYourVote3.app/first.png BuyBackYourVote3/first.pngdecba5229d58b541^c554fe229d58b541^-143"libpng warning: Warning: Input PNG does not have an 8 bit input depth.  Please convert your PNG to 8-bit for optimal performance on iPhone OS.-0#0#0#-19%DVTDocumentLocation2@109"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/first.png0000000000000000^755"CopyPNGFile build/Debug-iphoneos/BuyBackYourVote3.app/first.png BuyBackYourVote3/first.png    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/first.png" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/first.png"36"5A7868CD-BBC4-4601-998F-E5041FF3F558-
+
+CCopyPNGFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/first@2x.png" BuyBackYourVote3/first@2x.png
+s358128930.994550
+e358128931.034687
+r1
+xCopyPNGFile
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/first@2x.png
+xBuyBackYourVote3/first@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"CopyPNGFile build/Debug-iphoneos/BuyBackYourVote3.app/first@2x.png BuyBackYourVote3/first@2x.pngfbb0fe229d58b541^bddf08239d58b541^---0#0#0#-19%DVTDocumentLocation2@112"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/first@2x.png0000000000000000^771"CopyPNGFile "build/Debug-iphoneos/BuyBackYourVote3.app/first@2x.png" "BuyBackYourVote3/first@2x.png"    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/first@2x.png" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/first@2x.png"36"793878CF-77BF-48CB-90D4-58AE974C63C5-
+
+CCopyPNGFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/second.png" BuyBackYourVote3/second.png
+s358128931.036020
+e358128931.096405
+r1
+xCopyPNGFile
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/second.png
+xBuyBackYourVote3/second.png
+olibpng warning: Warning: Input PNG does not have an 8 bit input depth.  Please convert your PNG to 8-bit for optimal performance on iPhone OS.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"CopyPNGFile build/Debug-iphoneos/BuyBackYourVote3.app/second.png BuyBackYourVote3/second.png594f09239d58b541^9bad18239d58b541^-143"libpng warning: Warning: Input PNG does not have an 8 bit input depth.  Please convert your PNG to 8-bit for optimal performance on iPhone OS.-0#0#0#-19%DVTDocumentLocation2@110"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/second.png0000000000000000^759"CopyPNGFile build/Debug-iphoneos/BuyBackYourVote3.app/second.png BuyBackYourVote3/second.png    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/second.png" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/second.png"36"DE035C16-9689-44FE-A77E-D6C31C7E7533-
+
+CCopyPNGFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/second@2x.png" BuyBackYourVote3/second@2x.png
+s358128931.097741
+e358128931.133054
+r1
+xCopyPNGFile
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/second@2x.png
+xBuyBackYourVote3/second@2x.png
+olibpng warning: Warning: Input PNG does not have an 8 bit input depth.  Please convert your PNG to 8-bit for optimal performance on iPhone OS.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"CopyPNGFile build/Debug-iphoneos/BuyBackYourVote3.app/second@2x.png BuyBackYourVote3/second@2x.pngb01c19239d58b541^3a1f22239d58b541^-143"libpng warning: Warning: Input PNG does not have an 8 bit input depth.  Please convert your PNG to 8-bit for optimal performance on iPhone OS.-0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/second@2x.png0000000000000000^775"CopyPNGFile "build/Debug-iphoneos/BuyBackYourVote3.app/second@2x.png" "BuyBackYourVote3/second@2x.png"    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/second@2x.png" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/second@2x.png"36"44E10063-A690-49B4-A1DD-4FBB9EF9D56C-
+
+CCopyPNGFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/zbar-back.png" ZBarSDK/Resources/zbar-back.png
+s358128931.134343
+e358128931.235726
+r1
+xCopyPNGFile
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/zbar-back.png
+xZBarSDK/Resources/zbar-back.png
+olibpng warning: Warning: Input PNG does not have an 8 bit input depth.  Please convert your PNG to 8-bit for optimal performance on iPhone OS.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"CopyPNGFile build/Debug-iphoneos/BuyBackYourVote3.app/zbar-back.png ZBarSDK/Resources/zbar-back.pngfa7a22239d58b541^f5663c239d58b541^-143"libpng warning: Warning: Input PNG does not have an 8 bit input depth.  Please convert your PNG to 8-bit for optimal performance on iPhone OS.-0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/ZBarSDK/Resources/zbar-back.png0000000000000000^773"CopyPNGFile build/Debug-iphoneos/BuyBackYourVote3.app/zbar-back.png ZBarSDK/Resources/zbar-back.png    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/Resources/zbar-back.png" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/zbar-back.png"36"58A27D24-DB7C-437A-A381-599E81762E24-
+
+CCopyPNGFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/zbar-helpicons.png" ZBarSDK/Resources/zbar-helpicons.png
+s358128931.241259
+e358128931.311824
+r1
+xCopyPNGFile
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/zbar-helpicons.png
+xZBarSDK/Resources/zbar-helpicons.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"CopyPNGFile build/Debug-iphoneos/BuyBackYourVote3.app/zbar-helpicons.png ZBarSDK/Resources/zbar-helpicons.pngd2e13d239d58b541^74d24f239d58b541^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/ZBarSDK/Resources/zbar-helpicons.png0000000000000000^793"CopyPNGFile build/Debug-iphoneos/BuyBackYourVote3.app/zbar-helpicons.png ZBarSDK/Resources/zbar-helpicons.png    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/Resources/zbar-helpicons.png" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/zbar-helpicons.png"36"D79BB97C-58A7-4553-B473-4668189A3EF8-
+
+CCopyPNGFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/zbar-samples.png" ZBarSDK/Resources/zbar-samples.png
+s358128931.313468
+e358128931.355886
+r1
+xCopyPNGFile
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/zbar-samples.png
+xZBarSDK/Resources/zbar-samples.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"CopyPNGFile build/Debug-iphoneos/BuyBackYourVote3.app/zbar-samples.png ZBarSDK/Resources/zbar-samples.png935650239d58b541^b11a5b239d58b541^---0#0#0#-19%DVTDocumentLocation2@117"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/ZBarSDK/Resources/zbar-samples.png0000000000000000^785"CopyPNGFile build/Debug-iphoneos/BuyBackYourVote3.app/zbar-samples.png ZBarSDK/Resources/zbar-samples.png    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/Resources/zbar-samples.png" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/zbar-samples.png"36"9B621796-E27D-47B0-ABF5-F1C07772054F-
+
+CCopyStringsFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/en.lproj/InfoPlist.strings" BuyBackYourVote3/en.lproj/InfoPlist.strings
+s358128930.624335
+e358128930.646020
+r1
+xCopyStringsFile
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/en.lproj/InfoPlist.strings
+xBuyBackYourVote3/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy BuyBackYourVote3/en.lproj/InfoPlist.strings35ec9f229d58b541^2e70a5229d58b541^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/en.lproj/InfoPlist.strings0000000000000000^642"CopyStringsFile build/Debug-iphoneos/BuyBackYourVote3.app/en.lproj/InfoPlist.strings BuyBackYourVote3/en.lproj/InfoPlist.strings    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/en.lproj" -- BuyBackYourVote3/en.lproj/InfoPlist.strings36"6F9624B4-D11C-4081-8B43-ACE00CEAD384-
+
+CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist build/Debug-iphoneos/BuyBackYourVote3.app/ResourceRules.plist
+s358128928.090233
+e358128928.093442
+r1
+xCpResource
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist
+xbuild/Debug-iphoneos/BuyBackYourVote3.app/ResourceRules.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Copy build/Debug-iphoneos/BuyBackYourVote3.app/ResourceRules.plist443317209d58b541^163118209d58b541^---0#0#0#-19%DVTDocumentLocation2@144"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/ResourceRules.plist000000000080d041^901"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist build/Debug-iphoneos/BuyBackYourVote3.app/ResourceRules.plist    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app"36"D1F6C050-D221-4ED8-A4EB-21EA5EAEEB4B-
+
+CCpResource ZBarSDK/Resources/zbar-help.html build/Debug-iphoneos/BuyBackYourVote3.app/zbar-help.html
+s358128931.237029
+e358128931.239986
+r1
+xCpResource
+xZBarSDK/Resources/zbar-help.html
+xbuild/Debug-iphoneos/BuyBackYourVote3.app/zbar-help.html
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy build/Debug-iphoneos/BuyBackYourVote3.app/zbar-help.htmlcec43c239d58b541^897e3d239d58b541^---0#0#0#-19%DVTDocumentLocation2@139"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/zbar-help.html000000000080d041^783"CpResource ZBarSDK/Resources/zbar-help.html build/Debug-iphoneos/BuyBackYourVote3.app/zbar-help.html    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK/Resources/zbar-help.html" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app"36"70D443E4-4FF4-4F6D-9BEB-8807F2CB2C08-
+
+CGenerateDSYMFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app.dSYM" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/BuyBackYourVote3"
+s358274296.605503
+e358274296.703751
+r1
+xGenerateDSYMFile
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app.dSYM
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/BuyBackYourVote3
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"Generating /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app.dSYMec189bf8d45ab541^b038b4f8d45ab541^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app.dSYM/0000000000000000^686"GenerateDSYMFile build/Debug-iphoneos/BuyBackYourVote3.app.dSYM build/Debug-iphoneos/BuyBackYourVote3.app/BuyBackYourVote3    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/usr/bin/dsymutil "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/BuyBackYourVote3" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app.dSYM"36"0462B836-4282-445C-B5D6-32AE59D6BE04-
+
+CLd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/BuyBackYourVote3" normal armv7
+s358274296.124489
+e358274296.597602
+r1
+xLd
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/BuyBackYourVote3
+xnormal
+xarmv7
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection126"Link /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/BuyBackYourVote3e90c20f8d45ab541^93fc98f8d45ab541^---0#0#0#--1385"Ld build/Debug-iphoneos/BuyBackYourVote3.app/BuyBackYourVote3 normal armv7    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv IPHONEOS_DEPLOYMENT_TARGET 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk "-L/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" "-L/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/ZBarSDK" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" -filelist "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/Objects-normal/armv7/BuyBackYourVote3.LinkFileList" -dead_strip -fobjc-arc -miphoneos-version-min=5.1 -liconv -framework QuartzCore -framework CoreVideo -framework CoreMedia -framework AVFoundation -framework UIKit -framework Foundation -framework CoreGraphics -lzbar -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/BuyBackYourVote3"36"6B838301-C2BC-4A45-9B39-D3862999D0B4-
+
+CProcessInfoPlistFile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/Info.plist" BuyBackYourVote3/BuyBackYourVote3-Info.plist
+s358128928.090876
+e358128928.096449
+r1
+xProcessInfoPlistFile
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/Info.plist
+xBuyBackYourVote3/BuyBackYourVote3-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Process BuyBackYourVote3/BuyBackYourVote3-Info.plist605717209d58b541^7db018209d58b541^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/BuyBackYourVote3-Info.plist0000000000000000^902"ProcessInfoPlistFile build/Debug-iphoneos/BuyBackYourVote3.app/Info.plist BuyBackYourVote3/BuyBackYourVote3-Info.plist    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility BuyBackYourVote3/BuyBackYourVote3-Info.plist -genpkginfo "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/PkgInfo" -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/ResourceRules.plist" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/Info.plist"36"1CE6E1D6-74B6-4405-B7F0-5797900A5602-
+
+CProcessPCH /Users/nathankeyes/Library/Developer/Xcode/DerivedData/BuyBackYourVote3-asznvzhswjedoscaynaximhhpvdn/Index/PrecompiledHeaders/BuyBackYourVote3-Prefix-gccognwnjhngbyafqogszagijmmv_ast/BuyBackYourVote3-Prefix.pch.pth BuyBackYourVote3/BuyBackYourVote3-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch.pth BuyBackYourVote3/BuyBackYourVote3-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s358128928.104968
+e358128928.539564
+r1
+xProcessPCH
+x/var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch.pth
+xBuyBackYourVote3/BuyBackYourVote3-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Precompile BuyBackYourVote3/BuyBackYourVote3-Prefix.pch172a1b209d58b541^bb288a209d58b541^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/BuyBackYourVote3/BuyBackYourVote3-Prefix.pch0000000000000000^3587"ProcessPCH /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch.pth BuyBackYourVote3/BuyBackYourVote3-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-generated-files.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-own-target-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-all-target-headers.hmap" -iquote "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3-project-headers.hmap" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/include" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources/armv7" "-I/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/DerivedSources" "-F/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos" --serialize-diagnostics /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch.dia -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/BuyBackYourVote3/BuyBackYourVote3-Prefix.pch" -o /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/rj/mwps2nlx51qf154f4r_nb_v00000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/BuyBackYourVote3-Prefix-gpgutlilmmwmreenhhunfyighlbx/BuyBackYourVote3-Prefix.pch.d36"D6F33DB0-22FE-491B-827D-2718C0F6E47F-
+
+CProcessProductPackaging "/Users/nathankeyes/Library/MobileDevice/Provisioning Profiles/909821F0-3461-4C7C-96BE-B356D1CFD14C.mobileprovision" "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/embedded.mobileprovision"
+s358128931.396316
+e358128931.400055
+r1
+xProcessProductPackaging
+x/Users/nathankeyes/Library/MobileDevice/Provisioning Profiles/909821F0-3461-4C7C-96BE-B356D1CFD14C.mobileprovision
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/embedded.mobileprovision
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection207"ProcessProductPackaging "/Users/nathankeyes/Library/MobileDevice/Provisioning Profiles/909821F0-3461-4C7C-96BE-B356D1CFD14C.mobileprovision" build/Debug-iphoneos/BuyBackYourVote3.app/embedded.mobileprovision118e65239d58b541^297866239d58b541^---0#0#0#-19%DVTDocumentLocation2@149"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/embedded.mobileprovision0000000000000000^756"ProcessProductPackaging "/Users/nathankeyes/Library/MobileDevice/Provisioning Profiles/909821F0-3461-4C7C-96BE-B356D1CFD14C.mobileprovision" build/Debug-iphoneos/BuyBackYourVote3.app/embedded.mobileprovision    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility "/Users/nathankeyes/Library/MobileDevice/Provisioning Profiles/909821F0-3461-4C7C-96BE-B356D1CFD14C.mobileprovision" -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app/embedded.mobileprovision"36"C02F3DB1-8A47-4B1B-B905-E941D6B733D0-
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3.xcent"
+s358128931.426493
+e358128931.430517
+r1
+xProcessProductPackaging
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3.xcent
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection234"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3.xcent6b476d239d58b541^bb436e239d58b541^---0#0#0#-19%DVTDocumentLocation2@172"file://localhost/Users/nathankeyes/Documents/Xcode%204%20Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3.xcent000000000080d041^836"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3.xcent    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist -entitlements -format xml -o "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/BuyBackYourVote3.build/Debug-iphoneos/BuyBackYourVote3.build/BuyBackYourVote3.xcent"36"DFE9B8E0-D77F-4555-B192-ED5297C67254-
+
+CTouch "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app"
+s358274296.745805
+e358274296.785772
+r1
+xTouch
+x/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Touch /Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app7501bff8d45ab541^9e28c9f8d45ab541^---0#0#0#--437"Touch build/Debug-iphoneos/BuyBackYourVote3.app    cd "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/nathankeyes/Documents/Xcode 4 Projects/BuyBackYourVote3/build/Debug-iphoneos/BuyBackYourVote3.app"36"430C831F-AD7A-4DA0-8B22-34A2B14C177F-
+
