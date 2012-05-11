@@ -83,7 +83,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
                 <viewController id="3" customClass="SearchViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="17">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="94" width="320" height="386"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" id="k4j-MC-aFl">
@@ -121,13 +121,13 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Follow your money from corporations to politicians and take politics back from corporate influences" textAlignment="center" id="nCJ-tu-k7M">
-                                <rect key="frame" x="0.0" y="146" width="320" height="124"/>
+                                <rect key="frame" x="0.0" y="131" width="320" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="DaA-HS-pMa">
-                                <rect key="frame" x="0.0" y="372" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="342" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.20784313730000001" green="0.4941176471" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
@@ -150,13 +150,13 @@
                                 <color key="tintColor" red="0.20784313730000001" green="0.4941176471" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Buy Back Your Vote" textAlignment="center" id="qxg-Fg-nTv">
-                                <rect key="frame" x="0.0" y="12" width="320" height="124"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="45"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Scan a barcode or search for a company name to get started" textAlignment="center" id="Obp-Gl-ngF">
-                                <rect key="frame" x="0.0" y="277" width="320" height="69"/>
+                                <rect key="frame" x="0.0" y="263" width="320" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -164,7 +164,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="PFs-wf-faS">
+                    <navigationItem key="navigationItem" prompt="Search for companies" id="PFs-wf-faS">
                         <barButtonItem key="backBarButtonItem" title="Back" id="EeJ-Pz-Okd"/>
                         <barButtonItem key="leftBarButtonItem" title="Scan barcode..." id="Cj9-dE-1hr">
                             <connections>
@@ -173,7 +173,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" id="WU8-Yd-saP">
                             <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search by company name..." minimumFontSize="17" clearButtonMode="whileEditing" id="D3Y-cG-5Nh">
-                                <rect key="frame" x="122" y="6" width="193" height="31"/>
+                                <rect key="frame" x="122" y="36" width="193" height="31"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
