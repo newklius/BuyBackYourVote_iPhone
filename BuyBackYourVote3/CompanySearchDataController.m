@@ -26,9 +26,9 @@
 - (void)initializeDataListWithName:(NSString *)name {
     NSMutableArray *clarificationList = [[NSMutableArray alloc] init];
     self.companyList = clarificationList;
-    // send query to Heroko with name
+    // send query to Heroku with name
     
-    NSString *query = [NSString stringWithFormat:@"http://buybackyourvote.herokuapp.com/search/results?q=%@", [[name lowercaseString] stringByReplacingOccurrencesOfString:@" " withString:@"%20"]];
+    NSString *query = [NSString stringWithFormat:@"http://buybackyourvote.herokuapp.com/search/results?iphone=true&q=%@", [[name lowercaseString] stringByReplacingOccurrencesOfString:@" " withString:@"%20"]];
     NSURL *url = [NSURL URLWithString:query];
 
     NSLog(@"url: %@",url);

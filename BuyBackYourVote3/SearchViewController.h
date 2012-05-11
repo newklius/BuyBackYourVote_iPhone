@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @class CompanySearchDataController;
+@class CompanyClarificationDataController;
+@class CompanySearchDataController;
 
-@interface SearchViewController : UIViewController <UITextFieldDelegate>
+@interface SearchViewController : UIViewController <ZBarReaderDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *companySearchQuery;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *actvityIndicator;
@@ -18,7 +20,9 @@
 @property (nonatomic, copy) NSString *oneSlug;
 @property (nonatomic, copy) NSString *oneName;
 @property (nonatomic, strong) CompanySearchDataController *searchDataController;
+@property (nonatomic, strong) CompanyClarificationDataController *clarificationDataController;
 
+- (IBAction)scanButtonPressed:(id)sender;
 - (IBAction)searchButtonTapped:(id)sender;
 
 @end
