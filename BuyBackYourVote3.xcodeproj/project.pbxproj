@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22F0FC4B155D935C0000CE05 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F0FC4A155D935C0000CE05 /* InfoViewController.m */; };
 		AA0960EB155372B0000B71C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0960EA155372B0000B71C0 /* UIKit.framework */; };
 		AA0960ED155372B0000B71C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0960EC155372B0000B71C0 /* Foundation.framework */; };
 		AA0960EF155372B0000B71C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0960EE155372B0000B71C0 /* CoreGraphics.framework */; };
@@ -48,6 +49,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22F0FC49155D935C0000CE05 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		22F0FC4A155D935C0000CE05 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		AA0960E6155372B0000B71C0 /* BuyBackYourVote3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuyBackYourVote3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0960EA155372B0000B71C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AA0960EC155372B0000B71C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -196,6 +199,8 @@
 				AA09615F1554657A000B71C0 /* CompanyClarification */,
 				AA09615E1554656F000B71C0 /* CompanyResults */,
 				AA0960F1155372B0000B71C0 /* Supporting Files */,
+				22F0FC49155D935C0000CE05 /* InfoViewController.h */,
+				22F0FC4A155D935C0000CE05 /* InfoViewController.m */,
 			);
 			path = BuyBackYourVote3;
 			sourceTree = "<group>";
@@ -427,6 +432,7 @@
 				AA096187155820C2000B71C0 /* BillsTableViewController.m in Sources */,
 				AA09618A15582263000B71C0 /* BillDetailViewController.m in Sources */,
 				AA0961971558A178000B71C0 /* CompanyWebViewController.m in Sources */,
+				22F0FC4B155D935C0000CE05 /* InfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

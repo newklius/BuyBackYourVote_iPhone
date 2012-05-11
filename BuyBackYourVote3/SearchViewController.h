@@ -24,5 +24,6 @@
 
 - (IBAction)scanButtonPressed:(id)sender;
 - (IBAction)searchButtonTapped:(id)sender;
+- (IBAction)infoButtonPressed:(id)sender;
 
 @end

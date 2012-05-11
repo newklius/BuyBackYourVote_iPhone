@@ -77,15 +77,78 @@
             </objects>
             <point key="canvasLocation" x="2774" y="180"/>
         </scene>
+        <!--Info View Controller - About Us-->
+        <scene sceneID="Wrm-Vv-heX">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7gD-HU-bwU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="mVr-mm-aAk" customClass="InfoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="siq-Ye-Kon">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Ops-EI-TTW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="Kdy-jm-JhU">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="qbr-AH-NdS" appends="YES" id="JM2-jJ-CUa"/>
+                                        </connections>
+                                    </textView>
+                                </subviews>
+                            </scrollView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="QpD-LZ-Ymt">
+                                <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bIx-uw-TBf"/>
+                                    <barButtonItem title="Close" id="OfH-AZ-vOv">
+                                        <connections>
+                                            <action selector="closeButtonTapped:" destination="mVr-mm-aAk" id="MXo-cS-pEp"/>
+                                            <segue destination="Dee-t9-QHT" kind="modal" identifier="BackToHomeSegue" modalTransitionStyle="flipHorizontal" id="SKN-kd-BCb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.20784313730000001" green="0.4941176471" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About Us" id="5W6-1e-vaH">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Uu1-eI-9uz"/>
+                    </navigationItem>
+                </viewController>
+                <swipeGestureRecognizer direction="left" id="qbr-AH-NdS">
+                    <connections>
+                        <action selector="closeButtonTapped:" destination="mVr-mm-aAk" id="dLg-tA-RMy"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1199" y="-104"/>
+        </scene>
         <!--Search View Controller-->
         <scene sceneID="13">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
-                <viewController id="3" customClass="SearchViewController" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" id="3" customClass="SearchViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="17">
-                        <rect key="frame" x="0.0" y="94" width="320" height="386"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Scan a barcode or search for a company name to get started" textAlignment="center" id="Obp-Gl-ngF">
+                                <rect key="frame" x="0.0" y="253" width="320" height="69"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" id="k4j-MC-aFl">
                                 <rect key="frame" x="150" y="326" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -120,14 +183,8 @@
                                     <segue destination="BJQ-d2-Lrt" kind="push" identifier="CompanyResultsSegue" id="gZv-hX-wrm"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Follow your money from corporations to politicians and take politics back from corporate influences" textAlignment="center" id="nCJ-tu-k7M">
-                                <rect key="frame" x="0.0" y="131" width="320" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="DaA-HS-pMa">
-                                <rect key="frame" x="0.0" y="342" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="372" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.20784313730000001" green="0.4941176471" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
@@ -144,27 +201,33 @@
                                             <state key="highlighted">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <action selector="infoButtonPressed:" destination="3" eventType="touchUpInside" id="BdL-FN-JUp"/>
+                                            </connections>
                                         </button>
+                                        <connections>
+                                            <segue destination="mVr-mm-aAk" kind="modal" identifier="InfoViewSegue" modalTransitionStyle="flipHorizontal" id="8AI-Ek-UWh"/>
+                                        </connections>
                                     </barButtonItem>
                                 </items>
                                 <color key="tintColor" red="0.20784313730000001" green="0.4941176471" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Buy Back Your Vote" textAlignment="center" id="qxg-Fg-nTv">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="45"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Scan a barcode or search for a company name to get started" textAlignment="center" id="Obp-Gl-ngF">
-                                <rect key="frame" x="0.0" y="263" width="320" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Follow your money from corporations to politicians and take politics back from corporate influences" textAlignment="center" id="nCJ-tu-k7M">
+                                <rect key="frame" x="0.0" y="127" width="320" height="118"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" prompt="Search for companies" id="PFs-wf-faS">
+                    <navigationItem key="navigationItem" id="PFs-wf-faS">
                         <barButtonItem key="backBarButtonItem" title="Back" id="EeJ-Pz-Okd"/>
                         <barButtonItem key="leftBarButtonItem" title="Scan barcode..." id="Cj9-dE-1hr">
                             <connections>
@@ -173,7 +236,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" id="WU8-Yd-saP">
                             <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search by company name..." minimumFontSize="17" clearButtonMode="whileEditing" id="D3Y-cG-5Nh">
-                                <rect key="frame" x="122" y="36" width="193" height="31"/>
+                                <rect key="frame" x="122" y="6" width="193" height="31"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
@@ -187,17 +250,8 @@
                     <connections>
                         <outlet property="actvityIndicator" destination="k4j-MC-aFl" id="7SZ-dg-YeE"/>
                         <outlet property="companySearchQuery" destination="D3Y-cG-5Nh" id="PCO-ZH-uiQ"/>
-                        <outlet property="searchDisplayController" destination="MUe-RS-f7r" id="NGq-tv-9qv"/>
                     </connections>
                 </viewController>
-                <searchDisplayController id="MUe-RS-f7r">
-                    <connections>
-                        <outlet property="delegate" destination="3" id="6bs-NI-cBI"/>
-                        <outlet property="searchContentsController" destination="3" id="OgB-ob-a0P"/>
-                        <outlet property="searchResultsDataSource" destination="3" id="JmR-gh-e07"/>
-                        <outlet property="searchResultsDelegate" destination="3" id="XXx-6h-9CH"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1179" y="498"/>
         </scene>
@@ -225,26 +279,6 @@
             <point key="canvasLocation" x="653" y="498"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="CompanySearchTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CompanySearchTableViewController.h"/>
-        </class>
-        <class className="CompanyWebViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CompanyWebViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="SearchViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="scanButtonPressed:"/>
-                <relationship kind="action" name="searchButtonTapped:"/>
-                <relationship kind="outlet" name="actvityIndicator" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="companySearchQuery" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

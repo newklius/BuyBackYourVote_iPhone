@@ -122,12 +122,18 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     if (textField == self.companySearchQuery) {
         [textField resignFirstResponder];
+        [self processSearchQuery];
     }
-    [self processSearchQuery];
     return YES;
 }
 
+- (IBAction)infoButtonPressed:(id)sender {
+    NSLog(@"infobutton");
+    [self performSegueWithIdentifier:@"InfoViewSegue" sender:self];
+}
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    NSLog(@"touchesBegan");
     [self.companySearchQuery resignFirstResponder];
 }
 
