@@ -24,12 +24,15 @@
 @synthesize actvityIndicator;
 @synthesize oneSlug, oneName, searchDataController;
 @synthesize clarificationDataController;
+@synthesize mainWebView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationController.navigationBar.tintColor = [[UIColor alloc] initWithRed:0.21 green:0.49 blue:0.21 alpha:1.0];
+    [self.mainWebView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"main" ofType:@"html"]isDirectory:NO]]];
+    self.mainWebView.scrollView.bounces = NO;
 }
 
 - (void)viewDidUnload
@@ -75,9 +78,11 @@
      General Mills: goes directly
      */
     
-    // this doesn't handle cases well where there are multiple results. /search/exists should only be used for barcodes
-    
-    /*NSString *slugString = [NSString stringWithFormat:@"http://buybackyourvote.herokuapp.com/search/exists?company=%@", [[self.companySearchQuery.text stringByReplacingOccurrencesOfString:@" " withString:@"%20"] lowercaseString]];
+    // this uses the normal search function now, since it's much faster than it used to be, and it is more
+    // accurate for freeform text searches. The slug searcher is better for searching if it's a formal
+    // company name
+        
+    NSString *slugString = [NSString stringWithFormat:@"http://buybackyourvote.herokuapp.com/search/json?q=%@", [[self.companySearchQuery.text stringByReplacingOccurrencesOfString:@" " withString:@"%20"] lowercaseString]];
     
     NSURL *slugURL = [NSURL URLWithString:slugString];
     NSData *slugJsonData = [NSData dataWithContentsOfURL:slugURL];
@@ -99,8 +104,8 @@
             [self performSegueWithIdentifier:@"CompanySearchSegue" sender:self];
         }
     }
-    else {*/
-        // create a searchDataController with search results
+    else {
+        /*// create a searchDataController with search results
     self.searchDataController = [[CompanySearchDataController alloc] initWithCompanyName:self.companySearchQuery.text];
     
     if ([self.searchDataController countOfCompanyList] == 1) {
@@ -109,14 +114,13 @@
         self.oneName = companySearch.companyName;
         self.oneSlug = companySearch.companyURL;
         [self performSegueWithIdentifier:@"CompanyResultsSegue" sender:self];
-    } else if ([self.searchDataController countOfCompanyList] == 0) {
+    } else if ([self.searchDataController countOfCompanyList] == 0) {*/
         UIAlertView *someError = [[UIAlertView alloc] initWithTitle: @"No results" message: @"There were no companies that matched your search" delegate: self cancelButtonTitle: @"Ok" otherButtonTitles: nil];
         
         [someError show];
-    } else {
-        [self performSegueWithIdentifier:@"CompanySearchSegue" sender:self];
+    /*} else {
+        [self performSegueWithIdentifier:@"CompanySearchSegue" sender:self];*/
     }
-    //}
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -218,8 +222,19 @@
         }
     }
     else {
-        [self performSegueWithIdentifier:@"CompanyClarificationSegue" sender:self];
+        UIAlertView *someError = [[UIAlertView alloc] initWithTitle: @"No results" message: @"The company that made this product has no campaign contributions" delegate: self cancelButtonTitle: @"Ok" otherButtonTitles: nil];
+        
+        [someError show];
+        // The clarification controller doesn't seem to do much so I changed it to an error message
+        //[self performSegueWithIdentifier:@"CompanyClarificationSegue" sender:self];
     }
+}
+
+- (IBAction)simulateButtonPressed:(id)sender {
+    //NSString *polandSprings = @"075720481279";
+    //NSString *honeyBunches = @"884912002181";
+    //NSString *wheaties = @"016000275652";
+    [self processUPC:@"075720481279"];
 }
 
 - (void) imagePickerController:(UIImagePickerController *)reader didFinishPickingMediaWithInfo:(NSDictionary *)info

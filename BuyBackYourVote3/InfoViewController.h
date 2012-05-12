@@ -10,4 +10,6 @@
 
 @interface InfoViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIWebView *aboutView;
+
 @end
