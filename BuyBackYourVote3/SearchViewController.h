@@ -12,10 +12,12 @@
 @class CompanyClarificationDataController;
 @class CompanySearchDataController;
 
-@interface SearchViewController : UIViewController <ZBarReaderDelegate>
+@interface SearchViewController : UIViewController <ZBarReaderDelegate> {
+    NSMutableData *responseData;
+}
 
 @property (weak, nonatomic) IBOutlet UITextField *companySearchQuery;
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *actvityIndicator;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (weak, nonatomic) IBOutlet UIWebView *mainWebView;
 
 @property (nonatomic, copy) NSString *oneSlug;

@@ -142,10 +142,6 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" id="k4j-MC-aFl">
-                                <rect key="frame" x="150" y="326" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </activityIndicatorView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gay-Xk-Q9I">
                                 <rect key="frame" x="123" y="132" width="75" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -243,6 +239,10 @@
                                     <action selector="simulateButtonPressed:" destination="3" eventType="touchUpInside" id="P5R-oe-F1g"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" id="k4j-MC-aFl">
+                                <rect key="frame" x="150" y="176" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -267,7 +267,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="actvityIndicator" destination="k4j-MC-aFl" id="7SZ-dg-YeE"/>
+                        <outlet property="activityIndicator" destination="k4j-MC-aFl" id="SXE-VY-joA"/>
                         <outlet property="companySearchQuery" destination="D3Y-cG-5Nh" id="PCO-ZH-uiQ"/>
                         <outlet property="mainWebView" destination="Ekf-BC-2Gb" id="DP9-Y6-3MV"/>
                     </connections>
@@ -343,37 +343,6 @@
             <point key="canvasLocation" x="1710" y="-138"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="CompanyClarificationTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CompanyClarificationTableViewController.h"/>
-        </class>
-        <class className="CompanySearchTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CompanySearchTableViewController.h"/>
-        </class>
-        <class className="CompanyWebViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CompanyWebViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="InfoViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/InfoViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="aboutView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="SearchViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="infoButtonPressed:"/>
-                <relationship kind="action" name="scanButtonPressed:"/>
-                <relationship kind="action" name="searchButtonTapped:"/>
-                <relationship kind="outlet" name="actvityIndicator" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="companySearchQuery" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="mainWebView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

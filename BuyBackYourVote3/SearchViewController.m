@@ -21,7 +21,7 @@
 
 @implementation SearchViewController
 @synthesize companySearchQuery;
-@synthesize actvityIndicator;
+@synthesize activityIndicator;
 @synthesize oneSlug, oneName, searchDataController;
 @synthesize clarificationDataController;
 @synthesize mainWebView;
@@ -38,7 +38,7 @@
 - (void)viewDidUnload
 {
     [self setCompanySearchQuery:nil];
-    [self setActvityIndicator:nil];
+    [self setActivityIndicator:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -81,46 +81,15 @@
     // this uses the normal search function now, since it's much faster than it used to be, and it is more
     // accurate for freeform text searches. The slug searcher is better for searching if it's a formal
     // company name
-        
-    NSString *slugString = [NSString stringWithFormat:@"http://buybackyourvote.herokuapp.com/search/json?q=%@", [[self.companySearchQuery.text stringByReplacingOccurrencesOfString:@" " withString:@"%20"] lowercaseString]];
     
-    NSURL *slugURL = [NSURL URLWithString:slugString];
-    NSData *slugJsonData = [NSData dataWithContentsOfURL:slugURL];
-    NSArray *slugJsonArray = [NSJSONSerialization JSONObjectWithData:slugJsonData options:0 error:nil];
-    
-    if ([slugJsonArray count] > 0) {
-        if ([slugJsonArray count] == 1 ) {
-            self.oneSlug = [[slugJsonArray objectAtIndex:0] objectForKey:@"slug"];
-            self.oneName = [[slugJsonArray objectAtIndex:0] objectForKey:@"name"];
-            NSLog(@"the slug = %@", self.oneSlug);
-            [self performSegueWithIdentifier:@"CompanyResultsSegue" sender:self];
-        }
-        else {
-            self.searchDataController = [[CompanySearchDataController alloc] init];
-            // get slugKeys from slugJsonResults
-            for (NSDictionary *slug in slugJsonArray) {         
-                [self.searchDataController addCompanyWithName:[slug objectForKey:@"name"] url:[slug objectForKey:@"slug"]];
-            }
-            [self performSegueWithIdentifier:@"CompanySearchSegue" sender:self];
-        }
-    }
-    else {
-        /*// create a searchDataController with search results
-    self.searchDataController = [[CompanySearchDataController alloc] initWithCompanyName:self.companySearchQuery.text];
-    
-    if ([self.searchDataController countOfCompanyList] == 1) {
-        CompanySearch *companySearch = [searchDataController objectInCompanyListAtIndex:0];
-        
-        self.oneName = companySearch.companyName;
-        self.oneSlug = companySearch.companyURL;
-        [self performSegueWithIdentifier:@"CompanyResultsSegue" sender:self];
-    } else if ([self.searchDataController countOfCompanyList] == 0) {*/
-        UIAlertView *someError = [[UIAlertView alloc] initWithTitle: @"No results" message: @"There were no companies that matched your search" delegate: self cancelButtonTitle: @"Ok" otherButtonTitles: nil];
-        
-        [someError show];
-    /*} else {
-        [self performSegueWithIdentifier:@"CompanySearchSegue" sender:self];*/
-    }
+    NSURLRequest *request=[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://buybackyourvote.herokuapp.com/search/json?q=%@", [[self.companySearchQuery.text stringByReplacingOccurrencesOfString:@" " withString:@"%20"] lowercaseString]]]
+                                              cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                          timeoutInterval:60.0];
+    // create the connection with the request
+    // and start loading the data
+    [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    [self.activityIndicator setHidden:YES];
+   
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -162,71 +131,115 @@
     // create Google URL query given barcode data
     NSString *query = [NSString stringWithFormat:@"https://www.googleapis.com/shopping/search/v1/public/products?key=AIzaSyBOyGiUhBNy4v0zFaHvvbxsB-8It3Zl3p8&country=US&q=%@&alt=json", UPC];
     NSURL *url = [NSURL URLWithString:query];
-    NSData *jsonData = [NSData dataWithContentsOfURL:url];
-    NSDictionary *jsonResults = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
+    NSURLRequest *request=[NSURLRequest requestWithURL: url
+                                           cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                       timeoutInterval:60.0];
+    // create the connection with the request
+    // and start loading the data
+    [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    [self.activityIndicator setHidden:NO];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+    responseData = [[NSMutableData alloc] init];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    [responseData appendData:data];
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+    [self.activityIndicator setHidden:YES];
+    UIAlertView *someError = [[UIAlertView alloc] initWithTitle: @"No results" message: @"There was a network error" delegate: self cancelButtonTitle: @"Ok" otherButtonTitles: nil];
     
-    NSArray *items = [jsonResults objectForKey:@"items"];
-    NSString *thisBrand = @"";
-    NSMutableDictionary *tally = [[NSMutableDictionary alloc] init];
-    for (NSDictionary *item in items) {
-        //NSLog(@"looping through items array: %d", i);
-        thisBrand = [[item objectForKey:@"product"] objectForKey:@"brand"];
-        // add thisbrand to tally
-        if (thisBrand != NULL) {
-            if ([tally valueForKey:thisBrand] == NULL)
-                [tally setValue:[NSNumber numberWithInt:1] forKey:thisBrand];
-            else {
-                NSNumber *currentValue = [tally valueForKey:thisBrand];
-                [tally setValue:[NSNumber numberWithInt:[currentValue intValue]+1] forKey:thisBrand];
+    [someError show];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection 
+{
+    NSLog(@"Succeeded! Received %d bytes of data",[responseData
+                                                   length]);
+    
+    if ([connection.currentRequest.URL.host isEqualToString:@"www.googleapis.com"]) { // it's searching for a UPC code
+        NSDictionary *jsonResults = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:nil];
+        
+        NSArray *items = [jsonResults objectForKey:@"items"];
+        NSString *thisBrand = @"";
+        NSMutableDictionary *tally = [[NSMutableDictionary alloc] init];
+        for (NSDictionary *item in items) {
+            //NSLog(@"looping through items array: %d", i);
+            thisBrand = [[item objectForKey:@"product"] objectForKey:@"brand"];
+            // add thisbrand to tally
+            if (thisBrand != NULL) {
+                if ([tally valueForKey:thisBrand] == NULL)
+                    [tally setValue:[NSNumber numberWithInt:1] forKey:thisBrand];
+                else {
+                    NSNumber *currentValue = [tally valueForKey:thisBrand];
+                    [tally setValue:[NSNumber numberWithInt:[currentValue intValue]+1] forKey:thisBrand];
+                }
             }
         }
-    }
-    
-    // sort tally by Value
-    //NSArray *sortedKeys = [tally keysSortedByValueUsingSelector:@selector(comparator)];
-    
-    NSArray *keys = [tally allKeys];
-    NSString *key = @"";
-    
-    self.clarificationDataController = [[CompanyClarificationDataController alloc] init];
-    
-    NSString *slugString = @"http://buybackyourvote.herokuapp.com/search/exists?";
-    NSString *slugURLConstruct = @"";
-    for (key in keys) {
-        // add each key to a URL thingy
-        slugURLConstruct = [slugURLConstruct stringByAppendingString:[[[NSString stringWithFormat:@"company=%@&", [key stringByReplacingOccurrencesOfString:@" " withString:@"%20"]] stringByReplacingOccurrencesOfString:@"\"" withString:@""] lowercaseString]];
-        [self.clarificationDataController addCompanyWithName:key];
-    }
-    
-    slugString = [slugString stringByAppendingString:slugURLConstruct];
-    NSLog(@"%@",slugString);
-    
-    NSURL *slugURL = [NSURL URLWithString:slugString];
-    NSData *slugJsonData = [NSData dataWithContentsOfURL:slugURL];
-    NSArray *slugJsonArray = [NSJSONSerialization JSONObjectWithData:slugJsonData options:0 error:nil];
-    
-    self.searchDataController = [[CompanySearchDataController alloc] init];
-    if ([slugJsonArray count] > 0) {
-        if ([slugJsonArray count] == 1) {
-            self.oneSlug = [[slugJsonArray objectAtIndex:0] objectForKey:@"slug"];
-            self.oneName = [[slugJsonArray objectAtIndex:0] objectForKey:@"name"];
-            NSLog(@"the slug = %@", self.oneSlug);
-            [self performSegueWithIdentifier:@"CompanyResultsSegue" sender:self];
+        
+        NSArray *keys = [tally allKeys];
+        NSString *key = @"";
+        
+        self.clarificationDataController = [[CompanyClarificationDataController alloc] init];
+        
+        NSString *slugString = @"http://buybackyourvote.herokuapp.com/search/exists?";
+        NSString *slugURLConstruct = @"";
+        for (key in keys) {
+            // add each key to a URL thingy
+            slugURLConstruct = [slugURLConstruct stringByAppendingString:[[[NSString stringWithFormat:@"company=%@&", [key stringByReplacingOccurrencesOfString:@" " withString:@"%20"]] stringByReplacingOccurrencesOfString:@"\"" withString:@""] lowercaseString]];
+            [self.clarificationDataController addCompanyWithName:key];
+        }
+        
+        slugString = [slugString stringByAppendingString:slugURLConstruct];
+        NSLog(@"%@",slugString);
+        NSURL *slugURL = [NSURL URLWithString:slugString];
+        NSURLRequest *request=[NSURLRequest requestWithURL: slugURL
+                                               cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                           timeoutInterval:60.0];
+        // create the connection with the request
+        // and start loading the data
+        [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    } else { // it's searching through the search bar
+        [self.activityIndicator setHidden:YES];
+        
+        NSArray *slugJsonArray = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:nil];
+        
+        if ([slugJsonArray count] > 0) {
+            if ([slugJsonArray count] == 1 ) {
+                self.oneSlug = [[slugJsonArray objectAtIndex:0] objectForKey:@"slug"];
+                self.oneName = [[slugJsonArray objectAtIndex:0] objectForKey:@"name"];
+                NSLog(@"the slug = %@", self.oneSlug);
+                [self performSegueWithIdentifier:@"CompanyResultsSegue" sender:self];
+            }
+            else {
+                self.searchDataController = [[CompanySearchDataController alloc] init];
+                // get slugKeys from slugJsonResults
+                for (NSDictionary *slug in slugJsonArray) {         
+                    [self.searchDataController addCompanyWithName:[slug objectForKey:@"name"] url:[slug objectForKey:@"slug"]];
+                }
+                [self performSegueWithIdentifier:@"CompanySearchSegue" sender:self];
+            }
         }
         else {
-            // get slugKeys from slugJsonResults
-            for (NSDictionary *slug in slugJsonArray) {         
-                [self.searchDataController addCompanyWithName:[slug objectForKey:@"name"] url:[slug objectForKey:@"slug"]];
-            }
-            [self performSegueWithIdentifier:@"CompanySearchSegue" sender:self];
+            /*// create a searchDataController with search results
+             self.searchDataController = [[CompanySearchDataController alloc] initWithCompanyName:self.companySearchQuery.text];
+             
+             if ([self.searchDataController countOfCompanyList] == 1) {
+             CompanySearch *companySearch = [searchDataController objectInCompanyListAtIndex:0];
+             
+             self.oneName = companySearch.companyName;
+             self.oneSlug = companySearch.companyURL;
+             [self performSegueWithIdentifier:@"CompanyResultsSegue" sender:self];
+             } else if ([self.searchDataController countOfCompanyList] == 0) {*/
+            UIAlertView *someError = [[UIAlertView alloc] initWithTitle: @"No results" message: @"No companies that have made campaign contributions matched your search" delegate: self cancelButtonTitle: @"Ok" otherButtonTitles: nil];
+            
+            [someError show];
+            /*} else {
+             [self performSegueWithIdentifier:@"CompanySearchSegue" sender:self];*/
         }
-    }
-    else {
-        UIAlertView *someError = [[UIAlertView alloc] initWithTitle: @"No results" message: @"The company that made this product has no campaign contributions" delegate: self cancelButtonTitle: @"Ok" otherButtonTitles: nil];
-        
-        [someError show];
-        // The clarification controller doesn't seem to do much so I changed it to an error message
-        //[self performSegueWithIdentifier:@"CompanyClarificationSegue" sender:self];
     }
 }
 
@@ -234,7 +247,7 @@
     //NSString *polandSprings = @"075720481279";
     //NSString *honeyBunches = @"884912002181";
     //NSString *wheaties = @"016000275652";
-    [self processUPC:@"075720481279"];
+    [self processUPC:@"016000275652"];
 }
 
 - (void) imagePickerController:(UIImagePickerController *)reader didFinishPickingMediaWithInfo:(NSDictionary *)info
