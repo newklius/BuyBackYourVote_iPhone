@@ -14,16 +14,14 @@
 
 @implementation Company
 
-@synthesize companyName = _companyName, candidates = _candidates, pacs = _pacs, supportedBills = _supportedBills, structure = _structure;
+@synthesize companyName = _companyName, companyURL = _companyURL, candidates = _candidates, pacs = _pacs, supportedBills = _supportedBills, structure = _structure;
 
--(id)initWithName:(NSString *)name candidates:(NSArray *)candidates pacs:(NSArray *)pacs bills:(NSArray *)bills structure:(CorporateStructure *)structure {
+-(id)initWithName:(NSString *)name URL:(NSString *)URL {
     self = [super init];
     if (self) {
         _companyName = name;
-        _candidates = candidates;
-        _pacs = pacs;
-        _supportedBills = bills;
-        _structure = structure;
+        _companyURL = URL;
+        NSLog(@"initing company");
         return self;
     }
     return nil;
@@ -44,10 +42,34 @@
     return nil;
 }
 
+-(void)loadDataFromAction:(NSString *)action extra:(NSString *)extra delegate:(id)delegate {
+    NSString *query = [NSString stringWithFormat:@"http://www.buybackyourvote.com/company/%@/%@/%@", action, self.companyURL, extra];
+    NSURL *url = [NSURL URLWithString:query];
+    NSURLRequest *request=[NSURLRequest requestWithURL: url
+                                           cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                       timeoutInterval:60.0];
+    // create the connection with the request
+    // and start loading the data
+    [[NSURLConnection alloc] initWithRequest:request delegate:delegate];
+    NSLog(query);
+}
+
+-(void)loadDataFromAction:(NSString *)action delegate:(id)delegate {
+    NSString *query = [NSString stringWithFormat:@"http://www.buybackyourvote.com/company/%@/%@", action, self.companyURL];
+    NSURL *url = [NSURL URLWithString:query];
+    NSURLRequest *request=[NSURLRequest requestWithURL: url
+                                           cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                       timeoutInterval:60.0];
+    // create the connection with the request
+    // and start loading the data
+    [[NSURLConnection alloc] initWithRequest:request delegate:delegate];
+    NSLog(query);
+}
+
 -(NSArray *)candidatesArray {
     NSMutableArray *candidates = [[NSMutableArray alloc] init];
     
-    NSString *query = [NSString stringWithFormat:@"http://buybackyourvote.herokuapp.com/company/candidates/%@", [[self.companyName stringByReplacingOccurrencesOfString:@" " withString:@"-"] lowercaseString]];
+    NSString *query = [NSString stringWithFormat:@"http://www.buybackyourvote.com/company/candidates/%@", [[self.companyName stringByReplacingOccurrencesOfString:@" " withString:@"-"] lowercaseString]];
     
     NSURL *url = [NSURL URLWithString:query];
     

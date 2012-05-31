@@ -12,7 +12,7 @@
 #import "CompanySearchDataController.h"
 #import "CompanySearch.h"
 #import "Company.h"
-#import "CompanyWebViewController.h"
+#import "CompanyTabViewController.h"
 
 @interface CompanySearchTableViewController ()
 
@@ -144,9 +144,9 @@
 {
     if ([[segue identifier] isEqualToString:@"CompanyResultsSegue"]) {
 
-        CompanyWebViewController *webViewController = [segue destinationViewController];
-        webViewController.companyURL = [self.searchDataController objectInCompanyListAtIndex:[self.tableView indexPathForSelectedRow].row].companyURL;
-        webViewController.companyName = [self.searchDataController objectInCompanyListAtIndex:[self.tableView indexPathForSelectedRow].row].companyName;
+        CompanyTabViewController *tabViewController = [segue destinationViewController];
+        tabViewController.companyURL = [self.searchDataController objectInCompanyListAtIndex:[self.tableView indexPathForSelectedRow].row].companyURL;
+        tabViewController.companyName = [self.searchDataController objectInCompanyListAtIndex:[self.tableView indexPathForSelectedRow].row].companyName;
         /*
         NSLog(@"segueing");
         

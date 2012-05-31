@@ -7,9 +7,10 @@
 //
 
 #import "BillsTableViewController.h"
-#import "BillsDataController.h"
 #import "Bill.h"
 #import "BillDetailViewController.h"
+#import "Company.h"
+#import "MBProgressHUD.h"
 
 @interface BillsTableViewController ()
 
@@ -17,13 +18,14 @@
 
 @implementation BillsTableViewController
 
-@synthesize billsDataController;
+@synthesize bills, company;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+        self.bills = [[NSArray alloc] init];
     }
     return self;
 }
@@ -31,7 +33,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -46,11 +47,6 @@
     // e.g. self.myOutlet = nil;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -62,30 +58,43 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [billsDataController countOfBillsList];
+    return [self.bills count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"BillsCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    NSDictionary *bill = [self.bills objectAtIndex:indexPath.row];
+    NSString *disposition = [bill objectForKey:@"disposition"];
+    NSString *cellIdentifier = @"BillCell";
+    
+    if ([disposition isKindOfClass:[NSString class]]) {
+        if ([disposition isEqualToString:@"support"]) {
+            cellIdentifier = @"SupportBillCell";
+        } else {
+            cellIdentifier = @"OpposeBillCell";
+        }
+    }
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
 	if (cell == nil) {
 		// Use the default cell style.
-		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
 	}
 	
 	// Set up the cell.
-	Bill *bill = [billsDataController objectInBillsListAtIndex:indexPath.row];
+	
     
-    cell.textLabel.text = bill.billTitle;
+    NSString *measure = [[bill objectForKey:@"measure"] stringByReplacingOccurrencesOfString:@"<sup>" withString:@""];
+    measure = [measure stringByReplacingOccurrencesOfString:@"</sup>" withString:@""];
     
-    if (bill.support) {
-        cell.detailTextLabel.text = @"Support";
-    } 
-    else {
-        cell.detailTextLabel.text = @"Oppose";
+    if ([disposition isKindOfClass:[NSString class]]) {
+        cell.textLabel.text = [NSString stringWithFormat:@"%@s %@", [disposition capitalizedString], measure];
+    } else {
+        cell.textLabel.text = measure;
     }
+    
+    cell.detailTextLabel.text = [bill objectForKey:@"topic"];
 
     return cell;
 }
@@ -131,25 +140,82 @@
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSURL *url = [ [ NSURL alloc ] initWithString: [[self.bills objectAtIndex:indexPath.row] objectForKey:@"url"]];
+    [[UIApplication sharedApplication] openURL:url];
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+/*- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"BillSegue"]) {
         
         BillDetailViewController *detailViewController = [segue destinationViewController];
-        detailViewController.bill = [self.billsDataController objectInBillsListAtIndex:[self.tableView indexPathForSelectedRow].row];
+        detailViewController.bill = [self.bills objectAtIndex:[self.tableView indexPathForSelectedRow].row];
 
     }
+}*/
+
+- (void)loadFromCompany:(Company *)comp {
+    self.company = comp;
+    if ([self.bills count] == 0) {
+        [MBProgressHUD showHUDAddedTo:self.tableView animated:YES];
+        [self.company loadDataFromAction:@"bills/json" delegate:self];
+    }
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+    responseData = [[NSMutableData alloc] init];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    [responseData appendData:data];
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+    [MBProgressHUD hideHUDForView:self.tableView animated:YES];
+    UIAlertView *someError = [[UIAlertView alloc] initWithTitle: @"No results" message: @"There was a network error" delegate: self cancelButtonTitle: @"Ok" otherButtonTitles: nil];
+    
+    [someError show];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection 
+{
+    NSLog(@"Succeeded! Received %d bytes of data",[responseData
+                                                   length]);
+    
+    NSInteger billsCount = [self.bills count];
+    
+    [MBProgressHUD hideHUDForView:self.tableView animated:YES];
+    
+    [[self tableView] beginUpdates];
+    
+    self.bills = [[NSJSONSerialization JSONObjectWithData:responseData options:0 error:nil] objectForKey:@"positions"];
+    
+    NSMutableArray *insertArray = [[NSMutableArray alloc] init];
+    NSMutableArray *deleteArray = [[NSMutableArray alloc] init];
+    
+    int i;
+    for (i = 0; i < billsCount; i++) {
+        [deleteArray addObject:[NSIndexPath indexPathForRow:i inSection:0]];
+    }
+    i = 0;
+    for (id item in self.bills) {
+        [insertArray addObject:[NSIndexPath indexPathForRow:i++ inSection:0]];
+    }
+    
+    //[self.tableView reloadData];
+    [[self tableView] deleteRowsAtIndexPaths:(NSArray *)deleteArray withRowAnimation:UITableViewRowAnimationAutomatic];
+    [[self tableView] insertRowsAtIndexPaths:(NSArray *)insertArray withRowAnimation:UITableViewRowAnimationAutomatic];
+    /*if ([self.children count] == 0) {
+     [[self tableView] deleteSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationAutomatic];
+     }*/
+    [[self tableView] endUpdates];
 }
 
 @end

@@ -12,8 +12,9 @@
 #import "CompanySearchDataController.h"
 #import "CompanyClarificationTableViewController.h"
 #import "CompanyClarificationDataController.h"
-#import "CompanyWebViewController.h"
+#import "CompanyTabViewController.h"
 #import "CompanySearch.h"
+#import "MBProgressHUD.h"
 
 @interface SearchViewController ()
 
@@ -21,7 +22,6 @@
 
 @implementation SearchViewController
 @synthesize companySearchQuery;
-@synthesize activityIndicator;
 @synthesize oneSlug, oneName, searchDataController;
 @synthesize clarificationDataController;
 @synthesize mainWebView;
@@ -38,7 +38,6 @@
 - (void)viewDidUnload
 {
     [self setCompanySearchQuery:nil];
-    [self setActivityIndicator:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -55,9 +54,9 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender 
 {    
     if ([[segue identifier] isEqualToString:@"CompanyResultsSegue"]) {
-        CompanyWebViewController *webViewController = [segue destinationViewController];
-        webViewController.companyURL = self.oneSlug;
-        webViewController.companyName = self.oneName;
+        CompanyTabViewController *tabViewController = [segue destinationViewController];
+        tabViewController.companyURL = self.oneSlug;
+        tabViewController.companyName = self.oneName;
     }    
     else if ([[segue identifier] isEqualToString:@"CompanySearchSegue"]) {
         CompanySearchTableViewController *searchViewController = [segue destinationViewController];
@@ -82,13 +81,13 @@
     // accurate for freeform text searches. The slug searcher is better for searching if it's a formal
     // company name
     
-    NSURLRequest *request=[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://buybackyourvote.herokuapp.com/search/json?q=%@", [[self.companySearchQuery.text stringByReplacingOccurrencesOfString:@" " withString:@"%20"] lowercaseString]]]
+    NSURLRequest *request=[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://www.buybackyourvote.com/search/json?q=%@", [[self.companySearchQuery.text stringByReplacingOccurrencesOfString:@" " withString:@"%20"] lowercaseString]]]
                                               cachePolicy:NSURLRequestUseProtocolCachePolicy
                                           timeoutInterval:60.0];
     // create the connection with the request
     // and start loading the data
     [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    [self.activityIndicator setHidden:YES];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
    
 }
 
@@ -137,7 +136,7 @@
     // create the connection with the request
     // and start loading the data
     [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    [self.activityIndicator setHidden:NO];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
@@ -149,7 +148,7 @@
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-    [self.activityIndicator setHidden:YES];
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
     UIAlertView *someError = [[UIAlertView alloc] initWithTitle: @"No results" message: @"There was a network error" delegate: self cancelButtonTitle: @"Ok" otherButtonTitles: nil];
     
     [someError show];
@@ -185,7 +184,7 @@
         
         self.clarificationDataController = [[CompanyClarificationDataController alloc] init];
         
-        NSString *slugString = @"http://buybackyourvote.herokuapp.com/search/exists?";
+        NSString *slugString = @"http://www.buybackyourvote.com/search/exists?";
         NSString *slugURLConstruct = @"";
         for (key in keys) {
             // add each key to a URL thingy
@@ -203,7 +202,7 @@
         // and start loading the data
         [[NSURLConnection alloc] initWithRequest:request delegate:self];
     } else { // it's searching through the search bar
-        [self.activityIndicator setHidden:YES];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
         
         NSArray *slugJsonArray = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:nil];
         

@@ -35,7 +35,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    titleLabel.text = bill.billTitle;
+    /*titleLabel.text = bill.billTitle;
     if (bill.support) {
         positionLabel.text = @"Support";
     }
@@ -44,7 +44,7 @@
     }
     numberLabel.text = bill.billNumber;
     // make the link a textfield or a URL somehow or axe it
-    summaryText.text = bill.summary;
+    summaryText.text = bill.summary;*/
 }
 
 - (void)viewDidUnload
@@ -60,7 +60,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
 @end

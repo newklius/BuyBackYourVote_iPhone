@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Company.h"
+#import "CompanyViewController.h"
 
 @class BillsDataController;
 
-@interface BillsTableViewController : UITableViewController
-@property (strong, nonatomic) BillsDataController *billsDataController;
+@interface BillsTableViewController : UITableViewController <CompanyViewController> {
+    NSMutableData *responseData;
+}
+
+@property (strong, nonatomic) NSArray *bills;
+@property (nonatomic, weak) Company *company;
+
+- (void)loadFromCompany:(Company *)comp;
 @end

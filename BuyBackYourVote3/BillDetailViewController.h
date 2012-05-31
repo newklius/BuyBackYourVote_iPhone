@@ -18,6 +18,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *linkLabel;
 @property (weak, nonatomic) IBOutlet UITextView *summaryText;
 
-@property (nonatomic, copy) Bill *bill;
+@property (nonatomic, copy) NSDictionary *bill;
 
 @end

@@ -17,7 +17,6 @@
 }
 
 @property (weak, nonatomic) IBOutlet UITextField *companySearchQuery;
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (weak, nonatomic) IBOutlet UIWebView *mainWebView;
 
 @property (nonatomic, copy) NSString *oneSlug;
