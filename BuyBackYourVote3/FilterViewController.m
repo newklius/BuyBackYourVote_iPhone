@@ -36,7 +36,7 @@
     }
     self.groupingPicker.selectedSegmentIndex = grouping;
     int seat;
-    if (![self.graphController.seatFilter isMemberOfClass:[NSString class]]) {
+    if (self.graphController.seatFilter == nil) {
         seat = 3;
     } else if ([self.graphController.seatFilter isEqualToString:@"President"]) {
         seat = 0;
