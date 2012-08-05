@@ -17,6 +17,14 @@
 		22D0903B1576E81B00E21B71 /* 17-bar-chart.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D0903A1576E81B00E21B71 /* 17-bar-chart.png */; };
 		22E0F8FB15701D0E009D277C /* CompanyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E0F8FA15701D0E009D277C /* CompanyViewController.m */; };
 		22E0F8FF157028B3009D277C /* CompanyGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E0F8FE157028B3009D277C /* CompanyGraphViewController.m */; };
+		22E76A5F15CA00BA00CD8E8E /* dollar-whitish_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22E76A5E15CA00BA00CD8E8E /* dollar-whitish_2.jpg */; };
+		22E76A6315CA0D4E00CD8E8E /* greyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E76A6115CA0D4E00CD8E8E /* greyButton.png */; };
+		22E76A6415CA0D4E00CD8E8E /* greyButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E76A6215CA0D4E00CD8E8E /* greyButton@2x.png */; };
+		22E76A6715CA0D5500CD8E8E /* greyButtonHighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E76A6515CA0D5500CD8E8E /* greyButtonHighlight.png */; };
+		22E76A6815CA0D5500CD8E8E /* greyButtonHighlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E76A6615CA0D5500CD8E8E /* greyButtonHighlight@2x.png */; };
+		22E76A6D15CB588400CD8E8E /* 195-barcode.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E76A6B15CB588400CD8E8E /* 195-barcode.png */; };
+		22E76A6E15CB588400CD8E8E /* 195-barcode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E76A6C15CB588400CD8E8E /* 195-barcode@2x.png */; };
+		22E76A7015CB5B8400CD8E8E /* dollar-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E76A6F15CB5B8400CD8E8E /* dollar-iphone.png */; };
 		22F0FC4B155D935C0000CE05 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F0FC4A155D935C0000CE05 /* InfoViewController.m */; };
 		22FF948E156F22C3004AA447 /* CompanyTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FF948D156F22C3004AA447 /* CompanyTabViewController.m */; };
 		AA0960EB155372B0000B71C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0960EA155372B0000B71C0 /* UIKit.framework */; };
@@ -75,6 +83,14 @@
 		22E0F8FA15701D0E009D277C /* CompanyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyViewController.m; sourceTree = "<group>"; };
 		22E0F8FD157028B3009D277C /* CompanyGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyGraphViewController.h; sourceTree = "<group>"; };
 		22E0F8FE157028B3009D277C /* CompanyGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyGraphViewController.m; sourceTree = "<group>"; };
+		22E76A5E15CA00BA00CD8E8E /* dollar-whitish_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dollar-whitish_2.jpg"; sourceTree = "<group>"; };
+		22E76A6115CA0D4E00CD8E8E /* greyButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greyButton.png; sourceTree = "<group>"; };
+		22E76A6215CA0D4E00CD8E8E /* greyButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greyButton@2x.png"; sourceTree = "<group>"; };
+		22E76A6515CA0D5500CD8E8E /* greyButtonHighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greyButtonHighlight.png; sourceTree = "<group>"; };
+		22E76A6615CA0D5500CD8E8E /* greyButtonHighlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greyButtonHighlight@2x.png"; sourceTree = "<group>"; };
+		22E76A6B15CB588400CD8E8E /* 195-barcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "195-barcode.png"; sourceTree = "<group>"; };
+		22E76A6C15CB588400CD8E8E /* 195-barcode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "195-barcode@2x.png"; sourceTree = "<group>"; };
+		22E76A6F15CB5B8400CD8E8E /* dollar-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dollar-iphone.png"; sourceTree = "<group>"; };
 		22F0FC49155D935C0000CE05 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		22F0FC4A155D935C0000CE05 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		22FF948C156F22C3004AA447 /* CompanyTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyTabViewController.h; sourceTree = "<group>"; };
@@ -246,6 +262,14 @@
 		AA0960F1155372B0000B71C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				22E76A6F15CB5B8400CD8E8E /* dollar-iphone.png */,
+				22E76A6B15CB588400CD8E8E /* 195-barcode.png */,
+				22E76A6C15CB588400CD8E8E /* 195-barcode@2x.png */,
+				22E76A6515CA0D5500CD8E8E /* greyButtonHighlight.png */,
+				22E76A6615CA0D5500CD8E8E /* greyButtonHighlight@2x.png */,
+				22E76A6115CA0D4E00CD8E8E /* greyButton.png */,
+				22E76A6215CA0D4E00CD8E8E /* greyButton@2x.png */,
+				22E76A5E15CA00BA00CD8E8E /* dollar-whitish_2.jpg */,
 				22D0903A1576E81B00E21B71 /* 17-bar-chart.png */,
 				22D090381576E7E300E21B71 /* 37-suitcase.png */,
 				2247EF1B155DE6DC00ACC425 /* about.html */,
@@ -461,6 +485,14 @@
 				22D090371576E7B400E21B71 /* 190-bank.png in Resources */,
 				22D090391576E7E300E21B71 /* 37-suitcase.png in Resources */,
 				22D0903B1576E81B00E21B71 /* 17-bar-chart.png in Resources */,
+				22E76A5F15CA00BA00CD8E8E /* dollar-whitish_2.jpg in Resources */,
+				22E76A6315CA0D4E00CD8E8E /* greyButton.png in Resources */,
+				22E76A6415CA0D4E00CD8E8E /* greyButton@2x.png in Resources */,
+				22E76A6715CA0D5500CD8E8E /* greyButtonHighlight.png in Resources */,
+				22E76A6815CA0D5500CD8E8E /* greyButtonHighlight@2x.png in Resources */,
+				22E76A6D15CB588400CD8E8E /* 195-barcode.png in Resources */,
+				22E76A6E15CB588400CD8E8E /* 195-barcode@2x.png in Resources */,
+				22E76A7015CB5B8400CD8E8E /* dollar-iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

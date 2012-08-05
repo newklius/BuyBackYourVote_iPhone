@@ -82,6 +82,7 @@
 - (void) processUPC:(NSString *)UPC {
     
     NSLog(@"starting to processUPC");
+    NSLog([NSString stringWithFormat:@"%@\n", UPC]);
     
     // create Google URL query given barcode data
     NSString *query = [NSString stringWithFormat:@"https://www.googleapis.com/shopping/search/v1/public/products?key=AIzaSyBOyGiUhBNy4v0zFaHvvbxsB-8It3Zl3p8&country=US&q=%@&alt=json", UPC];

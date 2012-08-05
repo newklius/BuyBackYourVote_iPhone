@@ -30,9 +30,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    //self.navigationController.navigationBar.translucent = YES;
     self.navigationController.navigationBar.tintColor = [[UIColor alloc] initWithRed:0.21 green:0.49 blue:0.21 alpha:1.0];
-    [self.mainWebView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"main" ofType:@"html"]isDirectory:NO]]];
-    self.mainWebView.scrollView.bounces = NO;
+    //self.navigationController.navigationBar.hidden = YES;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [[self navigationController] setNavigationBarHidden:YES animated:animated];
 }
 
 - (void)viewDidUnload
@@ -44,7 +48,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 - (IBAction)searchButtonTapped:(id)sender {
@@ -81,6 +85,7 @@
     // accurate for freeform text searches. The slug searcher is better for searching if it's a formal
     // company name
     
+    
     NSURLRequest *request=[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://www.buybackyourvote.com/search/json?q=%@", [[self.companySearchQuery.text stringByReplacingOccurrencesOfString:@" " withString:@"%20"] lowercaseString]]]
                                               cachePolicy:NSURLRequestUseProtocolCachePolicy
                                           timeoutInterval:60.0];
@@ -88,7 +93,6 @@
     // and start loading the data
     [[NSURLConnection alloc] initWithRequest:request delegate:self];
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-   
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -97,6 +101,31 @@
         [self processSearchQuery];
     }
     return YES;
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    [self animateTextField: textField up: YES];
+}
+
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    [self animateTextField: textField up: NO];
+}
+
+- (void) animateTextField: (UITextField*) textField up: (BOOL) up
+{
+    const int movementDistance = 210; // tweak as needed
+    const float movementDuration = 0.3f; // tweak as needed
+    
+    int movement = (up ? -movementDistance : movementDistance);
+    
+    [UIView beginAnimations: @"anim" context: nil];
+    [UIView setAnimationBeginsFromCurrentState: YES];
+    [UIView setAnimationDuration: movementDuration];
+    self.view.frame = CGRectOffset(self.view.frame, 0, movement);
+    [UIView commitAnimations];
 }
 
 - (IBAction)infoButtonPressed:(id)sender {
@@ -110,17 +139,17 @@
 }
 
 - (IBAction)scanButtonPressed:(id)sender {
-    
+    NSLog(@"touchesBegan");
     ZBarReaderViewController *reader = [ZBarReaderViewController new];
     reader.readerDelegate = self;
     reader.supportedOrientationsMask = ZBarOrientationMaskAll;
-    
+    NSLog(@"touchesBegan");
     ZBarImageScanner *scanner = reader.scanner;
-    
+    NSLog(@"touchesBegan");
     [scanner setSymbology:ZBAR_I25 config:ZBAR_CFG_ENABLE to:0];
-    
+    NSLog(@"touchesBegan");
     [self presentModalViewController:reader animated:YES];    
-    
+    NSLog(@"touchesBegan");
 }
 
 - (void) processUPC:(NSString *)UPC {
@@ -161,6 +190,7 @@
     
     if ([connection.currentRequest.URL.host isEqualToString:@"www.googleapis.com"]) { // it's searching for a UPC code
         NSDictionary *jsonResults = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:nil];
+        NSLog(@"touchesBegan");
         
         NSArray *items = [jsonResults objectForKey:@"items"];
         NSString *thisBrand = @"";
@@ -203,8 +233,11 @@
         [[NSURLConnection alloc] initWithRequest:request delegate:self];
     } else { // it's searching through the search bar
         [MBProgressHUD hideHUDForView:self.view animated:YES];
+        NSLog(@"touchesBegan");
         
         NSArray *slugJsonArray = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:nil];
+        
+        NSLog(@"response processed %d", [slugJsonArray count]);
         
         if ([slugJsonArray count] > 0) {
             if ([slugJsonArray count] == 1 ) {
@@ -214,9 +247,10 @@
                 [self performSegueWithIdentifier:@"CompanyResultsSegue" sender:self];
             }
             else {
+                NSLog(@"loadSearch");
                 self.searchDataController = [[CompanySearchDataController alloc] init];
                 // get slugKeys from slugJsonResults
-                for (NSDictionary *slug in slugJsonArray) {         
+                for (NSDictionary *slug in slugJsonArray) {
                     [self.searchDataController addCompanyWithName:[slug objectForKey:@"name"] url:[slug objectForKey:@"slug"]];
                 }
                 [self performSegueWithIdentifier:@"CompanySearchSegue" sender:self];

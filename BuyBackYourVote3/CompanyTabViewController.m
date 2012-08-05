@@ -23,6 +23,7 @@
     if (self) {
         // Custom initialization
     }
+    self.navigationController.navigationBar.hidden = NO;
     return self;
 }
 
@@ -49,6 +50,11 @@
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [[self navigationController] setNavigationBarHidden:NO animated:YES];
 }
 
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {

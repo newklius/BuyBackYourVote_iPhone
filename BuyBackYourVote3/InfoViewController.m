@@ -53,7 +53,7 @@
 }
 
 - (IBAction)closeButtonTapped:(id)sender {
-    [self performSegueWithIdentifier:@"BackToHomeSegue" sender:self];
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 @end
