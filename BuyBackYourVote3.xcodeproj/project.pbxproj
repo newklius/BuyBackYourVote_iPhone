@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2228315115D4A9E100EA71CC /* 17-bar-chart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2228315015D4A9E000EA71CC /* 17-bar-chart@2x.png */; };
+		2228315415D4A9E800EA71CC /* 37-suitcase@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2228315315D4A9E800EA71CC /* 37-suitcase@2x.png */; };
+		2228315615D4A9F800EA71CC /* 190-bank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2228315515D4A9F800EA71CC /* 190-bank@2x.png */; };
+		2228315915D5423700EA71CC /* IconDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228315815D5423600EA71CC /* IconDownloader.m */; };
+		2228315B15D5654700EA71CC /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 2228315A15D5654700EA71CC /* blank.png */; };
 		2247EF1C155DE6DC00ACC425 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 2247EF1B155DE6DC00ACC425 /* about.html */; };
 		2247EF1E155DFF3700ACC425 /* main.html in Resources */ = {isa = PBXBuildFile; fileRef = 2247EF1D155DFF3700ACC425 /* main.html */; };
 		2279541E1572CB3700D34031 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2279541D1572CB3700D34031 /* MBProgressHUD.m */; };
 		22C941F315756A9900C31F2D /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C941F215756A9900C31F2D /* FilterViewController.m */; };
 		22C941F71575722700C31F2D /* Contributions.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C941F61575722700C31F2D /* Contributions.m */; };
+		22CF2B9415CED01C00E2B774 /* dollar.png in Resources */ = {isa = PBXBuildFile; fileRef = 22CF2B9315CED01C00E2B774 /* dollar.png */; };
+		22CF2B9615CED02000E2B774 /* dollar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22CF2B9515CED02000E2B774 /* dollar@2x.png */; };
 		22D090371576E7B400E21B71 /* 190-bank.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D090361576E7B400E21B71 /* 190-bank.png */; };
 		22D090391576E7E300E21B71 /* 37-suitcase.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D090381576E7E300E21B71 /* 37-suitcase.png */; };
 		22D0903B1576E81B00E21B71 /* 17-bar-chart.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D0903A1576E81B00E21B71 /* 17-bar-chart.png */; };
@@ -68,6 +75,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2228315015D4A9E000EA71CC /* 17-bar-chart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "17-bar-chart@2x.png"; path = "../../../Pictures/GlyphishPro/icons/icons-gray/17-bar-chart@2x.png"; sourceTree = "<group>"; };
+		2228315315D4A9E800EA71CC /* 37-suitcase@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "37-suitcase@2x.png"; path = "../../../Pictures/GlyphishPro/icons/icons-gray/37-suitcase@2x.png"; sourceTree = "<group>"; };
+		2228315515D4A9F800EA71CC /* 190-bank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "190-bank@2x.png"; path = "../../../Pictures/GlyphishPro/icons/icons-gray/190-bank@2x.png"; sourceTree = "<group>"; };
+		2228315715D5423600EA71CC /* IconDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconDownloader.h; sourceTree = "<group>"; };
+		2228315815D5423600EA71CC /* IconDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconDownloader.m; sourceTree = "<group>"; };
+		2228315A15D5654700EA71CC /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blank.png; path = ../../Contributions/contributions/companies/static/images/blank.png; sourceTree = "<group>"; };
 		2247EF1B155DE6DC00ACC425 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		2247EF1D155DFF3700ACC425 /* main.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = main.html; sourceTree = "<group>"; };
 		2279541C1572CB3700D34031 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -76,6 +89,8 @@
 		22C941F215756A9900C31F2D /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
 		22C941F51575722700C31F2D /* Contributions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contributions.h; sourceTree = "<group>"; };
 		22C941F61575722700C31F2D /* Contributions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contributions.m; sourceTree = "<group>"; };
+		22CF2B9315CED01C00E2B774 /* dollar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dollar.png; path = ../dollar.png; sourceTree = "<group>"; };
+		22CF2B9515CED02000E2B774 /* dollar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dollar@2x.png"; path = "../dollar@2x.png"; sourceTree = "<group>"; };
 		22D090361576E7B400E21B71 /* 190-bank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "190-bank.png"; sourceTree = "<group>"; };
 		22D090381576E7E300E21B71 /* 37-suitcase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37-suitcase.png"; sourceTree = "<group>"; };
 		22D0903A1576E81B00E21B71 /* 17-bar-chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "17-bar-chart.png"; sourceTree = "<group>"; };
@@ -262,10 +277,16 @@
 		AA0960F1155372B0000B71C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2228315A15D5654700EA71CC /* blank.png */,
+				22CF2B9515CED02000E2B774 /* dollar@2x.png */,
+				22CF2B9315CED01C00E2B774 /* dollar.png */,
 				22E76A6F15CB5B8400CD8E8E /* dollar-iphone.png */,
 				22E76A6B15CB588400CD8E8E /* 195-barcode.png */,
 				22E76A6C15CB588400CD8E8E /* 195-barcode@2x.png */,
+				2228315315D4A9E800EA71CC /* 37-suitcase@2x.png */,
 				22E76A6515CA0D5500CD8E8E /* greyButtonHighlight.png */,
+				2228315015D4A9E000EA71CC /* 17-bar-chart@2x.png */,
+				2228315515D4A9F800EA71CC /* 190-bank@2x.png */,
 				22E76A6615CA0D5500CD8E8E /* greyButtonHighlight@2x.png */,
 				22E76A6115CA0D4E00CD8E8E /* greyButton.png */,
 				22E76A6215CA0D4E00CD8E8E /* greyButton@2x.png */,
@@ -384,6 +405,8 @@
 				22FF948D156F22C3004AA447 /* CompanyTabViewController.m */,
 				22E0F8F915701D0E009D277C /* CompanyViewController.h */,
 				22E0F8FA15701D0E009D277C /* CompanyViewController.m */,
+				2228315715D5423600EA71CC /* IconDownloader.h */,
+				2228315815D5423600EA71CC /* IconDownloader.m */,
 				22E0F8FD157028B3009D277C /* CompanyGraphViewController.h */,
 				22E0F8FE157028B3009D277C /* CompanyGraphViewController.m */,
 				22C941F115756A9900C31F2D /* FilterViewController.h */,
@@ -493,6 +516,12 @@
 				22E76A6D15CB588400CD8E8E /* 195-barcode.png in Resources */,
 				22E76A6E15CB588400CD8E8E /* 195-barcode@2x.png in Resources */,
 				22E76A7015CB5B8400CD8E8E /* dollar-iphone.png in Resources */,
+				22CF2B9415CED01C00E2B774 /* dollar.png in Resources */,
+				22CF2B9615CED02000E2B774 /* dollar@2x.png in Resources */,
+				2228315115D4A9E100EA71CC /* 17-bar-chart@2x.png in Resources */,
+				2228315415D4A9E800EA71CC /* 37-suitcase@2x.png in Resources */,
+				2228315615D4A9F800EA71CC /* 190-bank@2x.png in Resources */,
+				2228315B15D5654700EA71CC /* blank.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +558,7 @@
 				2279541E1572CB3700D34031 /* MBProgressHUD.m in Sources */,
 				22C941F315756A9900C31F2D /* FilterViewController.m in Sources */,
 				22C941F71575722700C31F2D /* Contributions.m in Sources */,
+				2228315915D5423700EA71CC /* IconDownloader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,6 +590,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -575,6 +606,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -585,6 +618,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -594,6 +628,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

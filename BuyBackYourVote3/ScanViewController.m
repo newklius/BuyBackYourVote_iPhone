@@ -141,7 +141,7 @@
         else {
             // get slugKeys from slugJsonResults
             for (NSDictionary *slug in slugJsonArray) {         
-                [self.searchDataController addCompanyWithName:[slug objectForKey:@"name"] url:[slug objectForKey:@"slug"]];
+                [self.searchDataController addCompanyWithName:[slug objectForKey:@"name"] url:[slug objectForKey:@"slug"] logo:[slug objectForKey:@"logo"] sum:[slug objectForKey:@"sum"]];
             }
             [self performSegueWithIdentifier:@"CompanySearchSegue" sender:self];
         }

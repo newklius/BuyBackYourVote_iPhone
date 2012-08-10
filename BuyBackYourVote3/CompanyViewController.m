@@ -10,13 +10,14 @@
 #import "CompanyTabViewController.h"
 #import "Company.h"
 #import "MBProgressHUD.h"
+#import "IconDownloader.h"
 
 @interface CompanyViewController ()
 
 @end
 
 @implementation CompanyViewController
-@synthesize company, children, informationItems, parent;
+@synthesize company, children, informationItems, parent, imageDownloadsInProgress;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,6 +26,7 @@
         // Custom initialization
         self.children = [[NSArray alloc] init];
         self.informationItems = [[NSArray alloc] init];
+        
     }
     return self;
 }
@@ -32,6 +34,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.imageDownloadsInProgress = [NSMutableDictionary dictionary];
 	// Do any additional setup after loading the view.
 }
 
@@ -77,6 +80,35 @@
         NSDictionary *child = [self.children objectAtIndex:indexPath.row];
         
         cell.textLabel.text = [child objectForKey:@"name"];
+        if ([child objectForKey:@"sum"] != nil) {
+            NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+            [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+            [formatter setMaximumFractionDigits:0];
+            [formatter setCurrencySymbol:@"$"];
+            cell.detailTextLabel.text = [formatter stringFromNumber:[child objectForKey:@"sum"]];
+        } else {
+            cell.detailTextLabel.text = @"";
+        }
+        
+        NSLog(@"imaging");
+        
+        IconDownloader *iconDownloader = [imageDownloadsInProgress objectForKey:indexPath];
+        
+        if (!iconDownloader || !iconDownloader.image)
+        {
+            // if a download is deferred or in progress, return a placeholder image
+            UIImage *i = [UIImage imageNamed:@"blank.png"];
+            CGSize itemSize = CGSizeMake(48, 48);
+            UIGraphicsBeginImageContextWithOptions(itemSize, NO, [[UIScreen mainScreen] scale]);
+            CGRect imageRect = CGRectMake(0.0, 0.0, 48, 48);
+            [i drawInRect:imageRect];
+            cell.imageView.image = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext();
+        }
+        else
+        {
+            cell.imageView.image = iconDownloader.image;
+        }
         
         return cell;
     } else { // information about the company
@@ -86,6 +118,8 @@
         
         if ([label isEqualToString:@"Parent"]) {
             CellIdentifier = @"ParentCell";
+        } else if (![label isEqualToString:@"Spent"]) {
+            CellIdentifier = @"SelectableInfoCell";
         }
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         
@@ -194,77 +228,119 @@
 {
     NSLog(@"Succeeded! Received %d bytes of data",[responseData
                                                    length]);
-    
-    NSDictionary *jsonResults = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:nil];
-    
-    NSMutableArray *info = [[NSMutableArray alloc] init];
-    
-    NSInteger informationItemsCount = [self.informationItems count];
-    NSInteger childrenCount = [self.children count];
-    NSLog([NSString stringWithFormat:@"%d", informationItemsCount]);
-    NSLog([NSString stringWithFormat:@"%d", childrenCount]);
-    
-    NSString* sector = [jsonResults objectForKey:@"sector"];
-    if (![sector isEqualToString:@""])
-        [info addObject:[NSArray arrayWithObjects:@"Sector", sector, nil]];
-    NSString* industry = [jsonResults objectForKey:@"industry"];
-    if (![industry isEqualToString:@""])
-        [info addObject:[NSArray arrayWithObjects:@"Industry", industry, nil]];
-    NSString* logoURL = [jsonResults objectForKey:@"logo"];
-    NSString* location = [jsonResults objectForKey:@"location"];
-    while ([location hasPrefix:@", "]) {
-        location = [location substringFromIndex:2];
-    }
-    if (![location isEqualToString:@""])
-        [info addObject:[NSArray arrayWithObjects: @"Location", location, nil]];
-    NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
-    [f setNumberStyle:NSNumberFormatterDecimalStyle];
-    NSNumber *contribution_sum = [f numberFromString:[jsonResults objectForKey:@"contribution_sum"]];
-    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
-    [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
-    [formatter setCurrencySymbol:@"$"];
-    NSString *totalString = [formatter stringFromNumber:contribution_sum];
-    [info addObject:[NSArray arrayWithObjects: @"Spent", totalString, nil]];
-    NSDictionary *parentDict = [jsonResults objectForKey:@"parent"];
-    if ([parentDict isKindOfClass:[NSDictionary class]]) {
-        self.parent = parentDict;
-        [info addObject:[NSArray arrayWithObjects: @"Parent", [self.parent objectForKey:@"name"], nil]];
-    }
-    
-    [MBProgressHUD hideHUDForView:self.tableView animated:YES];
-    
-    [[self tableView] beginUpdates];
-    
-    self.children = [jsonResults objectForKey:@"children"];
-    self.informationItems = [NSArray arrayWithArray:info];
-    
-    NSMutableArray *insertArray = [[NSMutableArray alloc] init];
-    NSMutableArray *deleteArray = [[NSMutableArray alloc] init];
-    
-    int i;
-    for (i = 0; i < informationItemsCount; i++) {
-        [deleteArray addObject:[NSIndexPath indexPathForRow:i inSection:0]];
-    }
-    for (i = 0; i < childrenCount; i++) {
-        [deleteArray addObject:[NSIndexPath indexPathForRow:i inSection:0]];
-    }
-    i = 0;
-    for (id item in self.informationItems) {
-        [insertArray addObject:[NSIndexPath indexPathForRow:i++ inSection:0]];
-    }
-    i = 0;
-    for (NSDictionary* child in self.children) {
-        [insertArray addObject:[NSIndexPath indexPathForRow:i++ inSection:1]];
-    }
-    
-    //[self.tableView reloadData];
-    [[self tableView] deleteRowsAtIndexPaths:(NSArray *)deleteArray withRowAnimation:UITableViewRowAnimationAutomatic];
-    [[self tableView] insertRowsAtIndexPaths:(NSArray *)insertArray withRowAnimation:UITableViewRowAnimationAutomatic];
-    /*if ([self.children count] == 0) {
-        [[self tableView] deleteSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationAutomatic];
-    }*/
-    [[self tableView] endUpdates];
         
+    if ([connection.currentRequest.URL.path hasPrefix:@"/company/json"]) {
+        
+        NSDictionary *jsonResults = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:nil];
+        
+        NSMutableArray *info = [[NSMutableArray alloc] init];
+        
+        NSInteger informationItemsCount = [self.informationItems count];
+        NSInteger childrenCount = [self.children count];
+        NSLog([NSString stringWithFormat:@"%d", informationItemsCount]);
+        NSLog([NSString stringWithFormat:@"%d", childrenCount]);
+        
+        NSString* sector = [jsonResults objectForKey:@"sector"];
+        if (![sector isEqualToString:@""] && sector)
+            [info addObject:[NSArray arrayWithObjects:@"Sector", sector, nil]];
+        NSString* industry = [jsonResults objectForKey:@"industry"];
+        if (![industry isEqualToString:@""] && industry)
+            [info addObject:[NSArray arrayWithObjects:@"Industry", industry, nil]];
+        NSString* logoURL = [jsonResults objectForKey:@"logo"];
+        NSString* location = [jsonResults objectForKey:@"location"];
+        while ([location hasPrefix:@", "]) {
+            location = [location substringFromIndex:2];
+        }
+        if (![location isEqualToString:@""])
+            [info addObject:[NSArray arrayWithObjects: @"Location", location, nil]];
+        NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
+        [f setNumberStyle:NSNumberFormatterDecimalStyle];
+        NSNumber *contribution_sum = [f numberFromString:[jsonResults objectForKey:@"contribution_sum"]];
+        NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+        [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+        [formatter setMaximumFractionDigits:0];
+        [formatter setCurrencySymbol:@"$"];
+        NSString *totalString = [formatter stringFromNumber:contribution_sum];
+        [info addObject:[NSArray arrayWithObjects: @"Spent", totalString, nil]];
+        NSDictionary *parentDict = [jsonResults objectForKey:@"parent"];
+        if ([parentDict isKindOfClass:[NSDictionary class]]) {
+            self.parent = parentDict;
+            [info addObject:[NSArray arrayWithObjects: @"Parent", [self.parent objectForKey:@"name"], nil]];
+        }
+        
+        [MBProgressHUD hideHUDForView:self.tableView animated:YES];
+        
+        [[self tableView] beginUpdates];
+        
+        self.children = [jsonResults objectForKey:@"children"];
+        int i;
+        self.informationItems = [NSArray arrayWithArray:info];
+        
+        NSMutableArray *insertArray = [[NSMutableArray alloc] init];
+        NSMutableArray *deleteArray = [[NSMutableArray alloc] init];
+        
+        
+        for (i = 0; i < informationItemsCount; i++) {
+            [deleteArray addObject:[NSIndexPath indexPathForRow:i inSection:0]];
+        }
+        for (i = 0; i < childrenCount; i++) {
+            [deleteArray addObject:[NSIndexPath indexPathForRow:i inSection:0]];
+        }
+        i = 0;
+        for (id item in self.informationItems) {
+            [insertArray addObject:[NSIndexPath indexPathForRow:i++ inSection:0]];
+        }
+        i = 0;
+        for (NSDictionary* child in self.children) {
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:1];
+            [insertArray addObject:indexPath];
+            NSString *url = [child objectForKey:@"logo"];
+            if (url == (id)[NSNull null]) {
+                NSString *slug = [child objectForKey:@"slug"];
+                url = [NSString stringWithFormat:@"http://www.buybackyourvote.com/company/json/%@", slug];
+            }
+            NSLog(url);
+            if (![url isEqualToString:@""]) {
+                [self startIconDownload:url forIndexPath:indexPath];
+            }
+            i++;
+        }
+        
+        //[self.tableView reloadData];
+        [[self tableView] deleteRowsAtIndexPaths:(NSArray *)deleteArray withRowAnimation:UITableViewRowAnimationAutomatic];
+        [[self tableView] insertRowsAtIndexPaths:(NSArray *)insertArray withRowAnimation:UITableViewRowAnimationAutomatic];
+        /*if ([self.children count] == 0) {
+         [[self tableView] deleteSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationAutomatic];
+         }*/
+        [[self tableView] endUpdates];
+        
+    }
+}
+
+- (void)startIconDownload:(NSString *)url forIndexPath:(NSIndexPath *)indexPath
+{
+    IconDownloader *iconDownloader = [imageDownloadsInProgress objectForKey:indexPath];
+    if (iconDownloader == nil)
+    {
+        iconDownloader = [[IconDownloader alloc] init];
+        iconDownloader.url = url;
+        iconDownloader.indexPathInTableView = indexPath;
+        iconDownloader.delegate = self;
+        [imageDownloadsInProgress setObject:iconDownloader forKey:indexPath];
+        [iconDownloader startDownload];
+    }
+}
+
+- (void)appImageDidLoad:(NSIndexPath *)indexPath
+{
+    IconDownloader *iconDownloader = [imageDownloadsInProgress objectForKey:indexPath];
+    if (iconDownloader != nil)
+    {
+        UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:iconDownloader.indexPathInTableView];
+        
+        // Display the newly loaded image
+        cell.imageView.image = iconDownloader.image;
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

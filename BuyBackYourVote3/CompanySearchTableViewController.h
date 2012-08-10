@@ -11,4 +11,5 @@
 
 @interface CompanySearchTableViewController : UITableViewController
 @property (strong, nonatomic) CompanySearchDataController *searchDataController;
+@property (nonatomic, strong) NSMutableDictionary *imageDownloadsInProgress;
 @end

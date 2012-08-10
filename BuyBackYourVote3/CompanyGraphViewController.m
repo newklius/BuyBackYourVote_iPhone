@@ -79,37 +79,44 @@
     [someError show];
 }
 
+- (void)loadContributionsBackgroundWithYear:(NSNumber *)year {
+    
+    NSMutableArray *deleteArray = [[NSMutableArray alloc] init];
+    NSMutableArray *insertArray = [[NSMutableArray alloc] init];
+    
+    [[self tableView] beginUpdates];
+    
+    int i = 0;
+    for (id item in self.contributions.list) {
+        [deleteArray addObject:[NSIndexPath indexPathForRow:i++ inSection:0]];
+    }
+    
+    Contributions *c = [self.contributionsByYear objectForKey:year];
+    contributions = c;
+    [contributions filterWithGrouping:groupingFilter state:stateFilter seat:seatFilter];
+    
+    i = 0;
+    for (id item in c.list) {
+        [insertArray addObject:[NSIndexPath indexPathForRow:i++ inSection:0]];
+    }
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    
+    [[self tableView] deleteRowsAtIndexPaths:(NSArray *)deleteArray withRowAnimation:UITableViewRowAnimationAutomatic];
+    [[self tableView] insertRowsAtIndexPaths:(NSArray *)insertArray withRowAnimation:UITableViewRowAnimationAutomatic];
+    
+    [[self tableView] endUpdates];
+}
+
 - (void)loadContributionsWithYear:(NSNumber *)year {
     yearFilter = year;
     Contributions *c = [self.contributionsByYear objectForKey:year];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     if (![c isMemberOfClass:[Contributions class]]) {
         // download year
-        [MBProgressHUD showHUDAddedTo:self.view animated:YES];
         [self.company loadDataFromAction:@"candidates" extra:[NSString stringWithFormat:@"%d", [year intValue]] delegate:self];
     } else {
         // update table right away
-        NSMutableArray *deleteArray = [[NSMutableArray alloc] init];
-        NSMutableArray *insertArray = [[NSMutableArray alloc] init];
-        
-        [[self tableView] beginUpdates];
-        
-        int i = 0;
-        for (id item in self.contributions.list) {
-            [deleteArray addObject:[NSIndexPath indexPathForRow:i++ inSection:0]];
-        }
-        
-        contributions = c;
-        [contributions filterWithGrouping:groupingFilter state:stateFilter seat:seatFilter];
-        
-        i = 0;
-        for (id item in c.list) {
-            [insertArray addObject:[NSIndexPath indexPathForRow:i++ inSection:0]];
-        }
-        
-        [[self tableView] deleteRowsAtIndexPaths:(NSArray *)deleteArray withRowAnimation:UITableViewRowAnimationAutomatic];
-        [[self tableView] insertRowsAtIndexPaths:(NSArray *)insertArray withRowAnimation:UITableViewRowAnimationAutomatic];
-        
-        [[self tableView] endUpdates];
+        [self performSelectorInBackground:@selector(loadContributionsBackgroundWithYear:) withObject:year];
 
     }
 }
@@ -194,6 +201,7 @@
     
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
     [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+    [formatter setMaximumFractionDigits:0];
     [formatter setCurrencySymbol:@"$"];
     
     cell.textLabel.text = [formatter stringFromNumber:[contribution objectAtIndex:1]];

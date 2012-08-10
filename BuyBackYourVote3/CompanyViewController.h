@@ -24,5 +24,7 @@
 @property (nonatomic, strong) NSDictionary *parent;
 @property (nonatomic, strong) NSArray *informationItems;
 @property (nonatomic, weak) Company *company;
+@property (nonatomic, weak) UIImageView *logoImage;
+@property (nonatomic, strong) NSMutableDictionary *imageDownloadsInProgress;
 
 @end

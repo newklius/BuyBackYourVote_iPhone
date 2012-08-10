@@ -16,7 +16,7 @@
 
 - (NSUInteger)countOfCompanyList;
 - (CompanySearch *)objectInCompanyListAtIndex:(NSUInteger)index;
-- (void)addCompanyWithName:(NSString *)name url:(NSString *)url;
+- (void)addCompanyWithName:(NSString *)name url:(NSString *)url logo:(NSString *)logo sum:(NSNumber *)sum;
 - (id)initWithCompanyName:(NSString *)name;
 
 @end

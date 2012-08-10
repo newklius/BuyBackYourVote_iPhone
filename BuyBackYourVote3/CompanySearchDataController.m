@@ -61,7 +61,7 @@
             NSLog(@"companyName: %@", companyName);
             //NSLog(@"We found a matching line! %@", line);   
             
-            [self addCompanyWithName:companyName url:companyURL];
+            [self addCompanyWithName:companyName url:companyURL logo:nil sum:nil];
 
         }
     }
@@ -99,8 +99,8 @@
     return [self.companyList objectAtIndex:index];
 }
 
-- (void)addCompanyWithName:(NSString *)name url:(NSString *)url {
-    CompanySearch *company = [[CompanySearch alloc] initWithName:name url:url];
+- (void)addCompanyWithName:(NSString *)name url:(NSString *)url logo:(NSString *)logo sum:(NSNumber *)sum {
+    CompanySearch *company = [[CompanySearch alloc] initWithName:name url:url logo:logo sum:sum];
     [self.companyList addObject:company];
 }
 

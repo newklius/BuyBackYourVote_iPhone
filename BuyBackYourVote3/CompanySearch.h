@@ -12,6 +12,8 @@
 
 @property (nonatomic, copy) NSString *companyName;
 @property (nonatomic, copy) NSString *companyURL;
--(id)initWithName:(NSString *)name url:(NSString *)url;
+@property (nonatomic, copy) NSString *companyLogo;
+@property (nonatomic, copy) NSNumber *companySum;
+-(id)initWithName:(NSString *)name url:(NSString *)url logo:(NSString *)logo sum:(NSNumber *)sum;
 
 @end

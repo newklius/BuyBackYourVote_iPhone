@@ -13,6 +13,7 @@
 #import "CompanySearch.h"
 #import "Company.h"
 #import "CompanyTabViewController.h"
+#import "IconDownloader.h"
 
 @interface CompanySearchTableViewController ()
 
@@ -20,7 +21,7 @@
 
 @implementation CompanySearchTableViewController
 
-@synthesize searchDataController;
+@synthesize searchDataController, imageDownloadsInProgress;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -34,6 +35,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.imageDownloadsInProgress = [NSMutableDictionary dictionary];
     
     self.navigationController.navigationBar.hidden = NO;
     
@@ -89,8 +92,74 @@
 	CompanySearch *companySearch = [searchDataController objectInCompanyListAtIndex:indexPath.row];
     
     cell.textLabel.text = companySearch.companyName;
+    if (companySearch.companySum != nil) {
+        NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+        [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+        [formatter setCurrencySymbol:@"$"];
+        [formatter setMaximumFractionDigits:0];
+        cell.detailTextLabel.text = [formatter stringFromNumber:companySearch.companySum];
+    } else {
+        cell.detailTextLabel.text = @"";
+    }
+    
+    IconDownloader *iconDownloader = [imageDownloadsInProgress objectForKey:indexPath];
+    
+    if (!iconDownloader || !iconDownloader.image)
+    {
+        NSString *url = companySearch.companyLogo;
+        if (url == (id)[NSNull null]) {
+            NSString *slug = companySearch.companyURL;
+            url = [NSString stringWithFormat:@"http://www.buybackyourvote.com/company/json/%@", slug];
+        }
+        if (![url isEqualToString:@""]) {
+            [self startIconDownload:url forIndexPath:indexPath];
+        }
+        // if a download is deferred or in progress, return a placeholder image
+        UIImage *i = [UIImage imageNamed:@"blank.png"];
+        CGSize itemSize = CGSizeMake(48, 48);
+        UIGraphicsBeginImageContextWithOptions(itemSize, NO, [[UIScreen mainScreen] scale]);
+        CGRect imageRect = CGRectMake(0.0, 0.0, 48, 48);
+        [i drawInRect:imageRect];
+        cell.imageView.image = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+    }
+    else
+    {
+        cell.imageView.image = iconDownloader.image;
+    }
+    cell.imageView.contentMode = UIViewContentModeCenter;
+    cell.imageView.frame = CGRectMake(0, 0, cell.imageView.image.size.width, cell.imageView.image.size.height);
+    cell.indentationLevel = 0;
     
     return cell;
+}
+
+- (void)startIconDownload:(NSString *)url forIndexPath:(NSIndexPath *)indexPath
+{
+    IconDownloader *iconDownloader = [imageDownloadsInProgress objectForKey:indexPath];
+    if (iconDownloader == nil)
+    {
+        iconDownloader = [[IconDownloader alloc] init];
+        iconDownloader.url = url;
+        iconDownloader.indexPathInTableView = indexPath;
+        iconDownloader.delegate = self;
+        [imageDownloadsInProgress setObject:iconDownloader forKey:indexPath];
+        [iconDownloader startDownload];
+    }
+}
+
+- (void)appImageDidLoad:(NSIndexPath *)indexPath
+{
+    IconDownloader *iconDownloader = [imageDownloadsInProgress objectForKey:indexPath];
+    if (iconDownloader != nil)
+    {
+        UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:iconDownloader.indexPathInTableView];
+        
+        // Display the newly loaded image
+        cell.imageView.image = iconDownloader.image;
+        cell.imageView.contentMode = UIViewContentModeCenter;
+        cell.imageView.frame = CGRectMake(0, 0, 44, 44);
+    }
 }
 
 /*
